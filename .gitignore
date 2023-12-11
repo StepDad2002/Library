@@ -1,1 +1,15 @@
 /EFCORE_TEST/EFCORE_TEST.csproj
+EFCORE_TEST/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+EFCORE_TEST/obj/Debug/net8.0/EFCORE_TEST.AssemblyInfo.cs
+EFCORE_TEST/obj/Debug/net8.0/EFCORE_TEST.AssemblyInfoInputs.cache
+EFCORE_TEST/obj/Debug/net8.0/EFCORE_TEST.assets.cache
+EFCORE_TEST/obj/Debug/net8.0/EFCORE_TEST.csproj.AssemblyReference.cache
+EFCORE_TEST/obj/Debug/net8.0/EFCORE_TEST.GeneratedMSBuildEditorConfig.editorconfig
+EFCORE_TEST/obj/Debug/net8.0/EFCORE_TEST.GlobalUsings.g.cs
+EFCORE_TEST/obj/EFCORE_TEST.csproj.nuget.dgspec.json
+EFCORE_TEST/obj/EFCORE_TEST.csproj.nuget.g.props
+EFCORE_TEST/obj/EFCORE_TEST.csproj.nuget.g.targets
+EFCORE_TEST/obj/project.assets.json
+EFCORE_TEST/obj/project.nuget.cache
+EFCORE_TEST/obj/project.packagespec.json
+EFCORE_TEST/obj/rider.project.restore.info
