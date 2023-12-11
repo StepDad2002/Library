@@ -1,0 +1,54 @@
+@using Library.Domain.Enums
+@model UpdateReservationVM
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutWithoutSearch";
+}
+
+<div class="flex justify-center mt-8 bg-yellow-100 w-64 p-4 mx-auto rounded-2xl">
+    <form asp-action="EditFromManagement" asp-controller="Reservation" method="post" class="">
+        <input asp-for="Id" value="@Model.Id" hidden="hidden">
+        <div class="form-group">
+            <label asp-for="Status" class="font-bold text-black"></label>
+            <select asp-for="Status" class="form-control rounded-xl text-black w-full text-center p-1">
+                @foreach (var name in Enum.GetNames(typeof(Status)))
+                {
+                    <option value="@name">@name</option>
+                }
+            </select>
+            <span asp-validation-for="Status" class="text-red-600"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Amount" class="font-bold text-black"></label>
+            <input asp-for="Amount" type="number" class="form-control rounded-xl text-black w-full text-center p-1"/>
+            <span asp-validation-for="Amount" class="text-red-600"></span>
+        </div>
+
+        <div class="flex justify-center mt-4">
+            <button type="submit" class="btn btn-primary ">Update</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+    $.validator.addMethod('DateNotInFuture', function (value, element, params) {
+        if (!value) {
+            // Ignore empty values, handle them with a 'Required' attribute if necessary
+            return true;
+        }
+        var date = new Date(value);
+        return date <= new Date();
+    });
+    
+    $.validator.unobtrusive.adapters.add('DateNotInFuture', function (options) {
+        options.rules['DateNotInFuture'] = {};
+        options.messages['DateNotInFuture'] = options.message;
+    });
+    </script>
+}

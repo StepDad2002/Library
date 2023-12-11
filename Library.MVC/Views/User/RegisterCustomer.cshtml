@@ -1,0 +1,70 @@
+@model CreateCustomerVM
+
+@{
+    ViewBag.Title = "title";
+    Layout = null;
+}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.17/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet"/>
+    <link rel="stylesheet " href="~/css/style.css">
+</head>
+<body class="bg-gray-800 overflow-x-hidden scroll-smooth">
+<body class="bg-gray-100">
+<div class="container mx-auto py-8">
+    <h1 class="text-2xl font-bold mb-6 text-center">Registration Form</h1>
+    <form class="w-full max-w-sm mx-auto bg-white p-8 rounded-md shadow-md" asp-action="RegisterCustomer">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="mb-4">
+            <label asp-for="FName" class="block text-gray-700 text-sm font-bold mb-2">First Name</label>
+            <input asp-for="FName" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                   type="text" placeholder="John">
+            <span asp-validation-for="FName" class="text-red-600"></span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="LName" class="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
+            <input asp-for="LName" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                   type="text" placeholder="Stone">
+            <span asp-validation-for="LName" class="text-red-600"></span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="Email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+            <input asp-for="Email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                   type="email" placeholder="example@MailAddress.com">
+            <span asp-validation-for="Email" class="text-red-600"></span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="Phone" class="block text-gray-700 text-sm font-bold mb-2">Phone</label>
+            <input asp-for="Phone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                   type="text" placeholder="123-456-78-90">
+            <span asp-validation-for="Phone" class="text-red-600"></span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="Password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+            <input asp-for="Password" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                   type="password" placeholder="***********">
+            <span asp-validation-for="Password" class="text-red-600"></span>
+        </div>
+        <button
+            class="w-full bg-indigo-500 text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300"
+            type="submit">
+            Register
+        </button>
+    </form>
+</div>
+</body>
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+
+
+</body>
+</html>

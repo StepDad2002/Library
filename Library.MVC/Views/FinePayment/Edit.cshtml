@@ -1,0 +1,30 @@
+@model UpdateFinePaymentVM
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutWithoutSearch";
+}
+
+<div class="flex justify-center mt-8 bg-yellow-100 w-64 p-4 mx-auto rounded-2xl">
+    <form asp-action="Edit" asp-controller="FinePayment" method="post" class="">
+        <div asp-validation-summary="All" class="text-red-600"></div>
+
+        <input asp-for="Id" value="@Model.Id" hidden="hidden"/>
+
+        <div class="form-group">
+            <label asp-for="Amount" class="font-bold text-black"></label>
+            <input asp-for="Amount" class="form-control rounded-xl text-black w-full h-12 text-center p-1" min="1" type="number"/>
+        </div>
+
+        <div class="flex justify-center mt-4">
+            <button type="submit" class="btn btn-primary ">Update</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+      
+}

@@ -1,0 +1,42 @@
+@model IEnumerable<FinePaymentListVM>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutWithoutSearch";
+}
+
+<div class="flex justify-center mt-8">
+    <table class="table-auto border-collapse border-2 border-gray-500">
+        <thead>
+            <tr>
+                <th class="border-2 p-2">Payed on</th>
+                <th class="border-2 p-2">Customer</th>
+                <th class="border-2 p-2">Amount</th>
+                <th class="border-2 p-2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var finePayment in Model)
+            {
+                <tr>
+                    <td class="border-2 p-2">@finePayment.PaymentDate.ToShortDateString()</td>
+                    <td class="border-2 p-2">
+                        <a asp-action="Manage" asp-controller="Customer">"@finePayment.Customer.FName @finePayment.Customer.LName"</a> 
+                    </td>
+                    <td class="border-2 p-2">@finePayment.Amount</td>
+                    <td class="border-2 p-2">
+                        <a asp-action="Edit" asp-route-id="@finePayment.Id">Update</a> | 
+                        <a onclick="confirmDelete()" asp-action="Delete" asp-route-id="@finePayment.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script>
+    function confirmDelete(event) {
+        if (!confirm('Do you really want to delete?')) {
+            event.preventDefault();
+        }
+    }
+    </script>

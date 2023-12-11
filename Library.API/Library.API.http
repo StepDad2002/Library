@@ -1,0 +1,8 @@
+@Library=http://localhost:5020
+
+GET {{Library}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{Library}}/api/Customer/-1
+Accept: application/json

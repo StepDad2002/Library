@@ -1,0 +1,51 @@
+@model UpdatePublisherVM
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutWithoutSearch";
+}
+
+<div class="flex justify-center mt-8 bg-yellow-100 w-64 p-4 mx-auto rounded-2xl">
+    <form asp-action="Edit" asp-controller="Publisher" method="post" class="">
+        <div asp-validation-summary="All" class="text-red-600"></div>
+
+        <div class="form-group">
+            <label asp-for="Name" class="font-bold text-black"></label>
+            <input asp-for="Name" class="form-control rounded-xl text-black w-full h-12 text-center p-1"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Phone" class="font-bold text-black"></label>
+            <input asp-for="Phone" class="form-control rounded-xl text-black w-full h-12 text-center p-1" type="text"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="WebSite" class="font-bold text-black"></label>
+            <input asp-for="WebSite" class="form-control rounded-xl text-black w-full h-12 text-center p-1"/>
+        </div>
+
+        <div class="flex justify-center mt-4">
+            <button type="submit" class="btn btn-primary ">Update</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+    $.validator.addMethod('DateNotInFuture', function (value, element, params) {
+        if (!value) {
+            // Ignore empty values, handle them with a 'Required' attribute if necessary
+            return true;
+        }
+        var date = new Date(value);
+        return date <= new Date();
+    });
+    
+    $.validator.unobtrusive.adapters.add('DateNotInFuture', function (options) {
+        options.rules['DateNotInFuture'] = {};
+        options.messages['DateNotInFuture'] = options.message;
+    });
+    </script>
+}

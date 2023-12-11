@@ -1,0 +1,29 @@
+@model CreateShelfVM
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutWithoutSearch";
+}
+
+<div class="flex flex-wrap justify-center">
+
+    <form asp-action="Create" method="post">
+        <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+                <label asp-for="Name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                <input type="text" asp-for="Name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Vudavniztvo">
+                <span asp-validation-for="Name" class="text-red-300"></span>
+            </div>
+            <div>
+                <label asp-for="Description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                <input type="text" asp-for="Description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="111-111-11-11">
+                <span asp-validation-for="Description" class="text-red-300"></span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Create
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

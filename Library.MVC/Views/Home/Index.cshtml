@@ -1,0 +1,129 @@
+﻿@model BookAuthorPublisherWrapper
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+    ViewBag.Controller = "Home";
+    ViewBag.Action = "Search";
+    ViewBag.Placeholder = "Book, Author, Publisher...";
+    ViewBag.ParamName = "query";
+}
+
+
+
+<div class="flex justify-center flex-col" style="gap: 2rem;">
+    <h1 class="text-center text-white font-bold align-super text-2xl uppercase">Bestsellers</h1>
+    <div class="carousel w-full">
+        @for (int i = 0; i < Model.Books.Count; i++)
+        {
+            BookListVM book = Model.Books[i];
+
+            <div id="@("slide" + (i + 1))" class="carousel-item relative w-full">
+                <div class="card lg:card-side bg-base-100 shadow-xl mx-auto flex justify-center">
+                    <img src="img/book-solid.svg" class="w-1/2 h-full mx-auto lg:w-full" alt="Album"/>
+                    <div class="card-body w-96">
+                        <h2 class="card-title">@book.Title</h2>
+                        <p>@book.Description</p>
+                        <div class="card-actions justify-end">
+                            <a asp-controller="Book" asp-action="Details" asp-route-id="@book.Id" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    @if (i == 0)
+                    {
+                        <a href="#@("slide" + Model.Books.Count)" class="btn btn-circle">❮</a>
+                    }
+                    else
+                    {
+                        <a href="#@("slide" + (Model.Books.Count - i))" class="btn btn-circle">❮</a>
+                    }
+                    @if (i == Model.Books.Count - 1)
+                    {
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    }
+                    else
+                    {
+                        <a href="#@("slide" + (i + 2))" class="btn btn-circle">❯</a>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+    <h1 class="text-center text-white font-bold align-super text-2xl uppercase">Popular authors</h1>
+    <div class="carousel w-full">
+        @for (int i = 0; i < Model.Authors.Count; i++)
+        {
+            AuthorVM author = Model.Authors[i];
+    
+            <div id="@("slideAuthor" + (i + 1))" class="carousel-item relative w-full">
+                <div class="card lg:card-side bg-base-100 shadow-xl mx-auto">
+                    <img src="img/person-rays-solid.svg" class="w-1/2 h-full mx-auto lg:w-full" alt="Album"/>
+                    <div class="card-body w-96">
+                        <h2 class="card-title">@author.FName @author.LName</h2>
+                        <p>@(author.BirthDay.HasValue ? author.BirthDay.Value.ToShortDateString() : "No information about birthday")</p>
+                        <div class="card-actions justify-end">
+                            <a asp-controller="Author" asp-action="Details" asp-route-id="@author.Id" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    @if (i == 0)
+                    {
+                        <a href="#@("slideAuthor" + Model.Books.Count)" class="btn btn-circle">❮</a>
+                    }
+                    else
+                    {
+                        <a href="#@("slideAuthor" + (Model.Books.Count - i))" class="btn btn-circle">❮</a>
+                    }
+                    @if (i == Model.Books.Count - 1)
+                    {
+                        <a href="#slideAuthor1" class="btn btn-circle">❯</a>
+                    }
+                    else
+                    {
+                        <a href="#@("slideAuthor" + (i + 2))" class="btn btn-circle">❯</a>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+    <h1 class="text-center text-white font-bold align-super text-2xl uppercase">Popular publishers</h1>
+     <div class="carousel w-full mb-16">
+            @for (int i = 0; i < Model.Publishers.Count; i++)
+            {
+                PublisherListVM publisher = Model.Publishers[i];
+    
+                <div id="@("slidePublisher" + (i + 1))" class="carousel-item relative w-full">
+                    <div class="card lg:card-side bg-base-100 shadow-xl mx-auto">
+                        <img src="img/person-circle-plus-solid.svg" class="w-1/2 h-full mx-auto lg:w-full" alt="Album"/>
+                        <div class="card-body w-96">
+                            <h2 class="card-title">@publisher.Name</h2>
+                            <p>@(publisher.Phone)</p>
+                            <div class="card-actions justify-end">
+                                <a asp-controller="Publisher" asp-action="Details" asp-route-id="@publisher.Id" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        @if (i == 0)
+                        {
+                            <a href="#@("slidePublisher" + Model.Books.Count)" class="btn btn-circle">❮</a>
+                        }
+                        else
+                        {
+                            <a href="#@("slidePublisher" + (Model.Books.Count - i))" class="btn btn-circle">❮</a>
+                        }
+                        @if (i == Model.Books.Count - 1)
+                        {
+                            <a href="#slidePublisher" class="btn btn-circle">❯</a>
+                        }
+                        else
+                        {
+                            <a href="#@("slidePublisher" + (i + 2))" class="btn btn-circle">❯</a>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+</div>

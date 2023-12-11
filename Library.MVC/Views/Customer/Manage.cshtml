@@ -1,0 +1,43 @@
+@model IEnumerable<CustomerListVM>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutWithoutSearch";
+}
+
+<div class="flex justify-center mt-8">
+    <table class="table-auto border-collapse border-2 border-gray-500">
+        <thead>
+        <tr>
+            <th class="border-2 p-2">First Name</th>
+            <th class="border-2 p-2">Last Name</th>
+            <th class="border-2 p-2">Email</th>
+            <th class="border-2 p-2">Phone</th>
+            <th class="border-2 p-2">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td class="border-2 p-2">@customer.FName</td>
+                <td class="border-2 p-2">@customer.LName</td>
+                <td class="border-2 p-2">@customer.Email</td>
+                <td class="border-2 p-2">@(customer.Phone)</td>
+                
+                <td class="border-2 p-2">
+                    <a onclick="confirmDelete(event)" asp-action="Delete" asp-route-id="@customer.Id">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<script>
+function confirmDelete(event) {
+    if (!confirm('Do you really want to delete?')) {
+        event.preventDefault();
+    }
+}
+</script>

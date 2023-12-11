@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\css\\input.css",
+      "PackagePath": "staticwebassets\\css\\input.css"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\img\\book-atlas-solid.svg",
+      "PackagePath": "staticwebassets\\img\\book-atlas-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\img\\book-solid.svg",
+      "PackagePath": "staticwebassets\\img\\book-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\img\\person-circle-plus-solid.svg",
+      "PackagePath": "staticwebassets\\img\\person-circle-plus-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\img\\person-rays-solid.svg",
+      "PackagePath": "staticwebassets\\img\\person-rays-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\img\\person-shelter-solid.svg",
+      "PackagePath": "staticwebassets\\img\\person-shelter-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\img\\phone-solid.svg",
+      "PackagePath": "staticwebassets\\img\\phone-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\img\\physics-book.png",
+      "PackagePath": "staticwebassets\\img\\physics-book.png"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\img\\user-solid.svg",
+      "PackagePath": "staticwebassets\\img\\user-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\cherm\\OneDrive\\Рабочий стол\\OOA_Projects\\Library\\Library.MVC\\wwwroot\\js\\tailwind.config.js",
+      "PackagePath": "staticwebassets\\js\\tailwind.config.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Library.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Library.MVC.props",
+      "PackagePath": "build\\Library.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Library.MVC.props",
+      "PackagePath": "buildMultiTargeting\\Library.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Library.MVC.props",
+      "PackagePath": "buildTransitive\\Library.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

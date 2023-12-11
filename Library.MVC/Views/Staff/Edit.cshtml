@@ -1,0 +1,53 @@
+@model UpdateStaffVM
+
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutWithoutSearch";
+}
+
+<div class="flex justify-center mt-8 bg-yellow-100 w-64 p-4 mx-auto rounded-2xl">
+    <form asp-action="Edit" asp-controller="Staff" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-red-600"></div>
+        <input hidden="hidden" asp-for="Position" value="@Model.Position">
+        <input hidden="hidden" asp-for="Salary" value="@Model.Salary">
+        <div class="form-group">
+            <label asp-for="FName" class="font-bold text-black"></label>
+            <input asp-for="FName" class="form-control rounded-xl text-black w-full h-12 text-center p-1"/>
+            <span asp-validation-for="FName" class="text-red-300"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="LName" class="font-bold text-black"></label>
+            <input asp-for="LName" class="form-control rounded-xl text-black w-full h-12 text-center p-1"/>
+            <span asp-validation-for="LName" class="text-red-300"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email" class="font-bold text-black"></label>
+            <input asp-for="Email" class="form-control rounded-xl text-black w-full text-center p-1"/>
+            <span asp-validation-for="Email" class="text-red-300"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Phone" class="font-bold text-black"></label>
+            <input asp-for="Phone" class="form-control rounded-xl text-black w-full h-12 text-center p-1"/>
+            <span asp-validation-for="Phone" class="text-red-300"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password" class="font-bold text-black"></label>
+            <input asp-for="Password" class="form-control rounded-xl text-black w-full h-12 text-center p-1"/>
+            <span asp-validation-for="Password" class="text-red-300"></span>
+        </div>
+        <div class="flex justify-center mt-4">
+        <button type="submit" class="btn btn-primary ">Save</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+}

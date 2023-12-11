@@ -1,0 +1,78 @@
+@model CreateLoanVM
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutWithoutSearch";
+}
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet"/>
+
+<div class="flex justify-center mt-8 bg-yellow-100 w-64 p-4 mx-auto rounded-2xl">
+    <form asp-action="Create" asp-controller="Loan" method="post" class="">
+
+        <div class="form-group">
+            <label asp-for="ReturnedDate" class="font-bold text-black"></label>
+            <input asp-for="ReturnedDate" class="form-control rounded-xl text-black w-full text-center p-1" type="date"/>
+            <span asp-validation-for="DueDate" class="text-red-600"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="FineAmount" class="font-bold text-black"></label>
+            <input asp-for="FineAmount" type="number" class="form-control rounded-xl text-black w-full h-12 text-center p-1"/>
+            <span asp-validation-for="FineAmount" class="text-red-600"></span>
+        </div>
+        <div class="form-group">
+            <label class="font-bold text-black">Customer</label>
+            <select id="customers" asp-for="CustomerId" style="width: 200px;">
+                @foreach (var custPhone in ViewBag.CustomersPhones)
+                {
+                    <option value="@custPhone.Id">@custPhone.Phone</option>
+                }
+                <!-- More options... -->
+            </select>
+            <span asp-validation-for="CustomerId" class="text-red-600"></span>
+        </div>
+        <div class="form-group">
+            <label class="font-bold text-black">Book ISBN</label>
+            <select id="books" asp-for="BookId" style="width: 200px;">
+                @foreach (var bookIsbn in ViewBag.BooksIsbn)
+                {
+                    <option value="@bookIsbn.Id">@bookIsbn.Isbn</option>
+                }
+                <!-- More options... -->
+            </select>
+            <span asp-validation-for="CustomerId" class="text-red-600"></span>
+        </div>
+
+        <div class="flex justify-center mt-4">
+            <button type="submit" class="btn btn-primary ">Create</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+    $.validator.addMethod('DateNotInFuture', function (value, element, params) {
+        if (!value) {
+            // Ignore empty values, handle them with a 'Required' attribute if necessary
+            return true;
+        }
+        var date = new Date(value);
+        return date <= new Date();
+    });
+    
+    $.validator.unobtrusive.adapters.add('DateNotInFuture', function (options) {
+        options.rules['DateNotInFuture'] = {};
+        options.messages['DateNotInFuture'] = options.message;
+    });
+    </script>
+
+    <script>
+             $(document).ready(function() {
+                 $('#customers').select2();
+                 $('#books').select2();
+             });
+             </script>
+}

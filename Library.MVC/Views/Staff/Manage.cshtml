@@ -1,0 +1,47 @@
+@model IEnumerable<StaffListVM>
+
+@{
+    ViewBag.Title = "Manage Staff";
+    Layout = "_LayoutWithoutSearch";
+}
+
+<div class="flex justify-center mt-8">
+    <table class="table-auto border-collapse border-2 border-gray-500">
+        <thead>
+        <tr>
+            <th class="border-2 p-2">Hire Date</th>
+            <th class="border-2 p-2">First Name</th>
+            <th class="border-2 p-2">Last Name</th>
+            <th class="border-2 p-2">Email</th>
+            <th class="border-2 p-2">Phone</th>
+            <th class="border-2 p-2">Position</th>
+            <th class="border-2 p-2">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var staff in Model)
+        {
+            <tr>
+                <td class="border-2 p-2">@staff.HireDate.ToShortDateString()</td>
+                <td class="border-2 p-2">@staff.FName</td>
+                <td class="border-2 p-2">@staff.LName</td>
+                <td class="border-2 p-2">@staff.Email</td>
+                <td class="border-2 p-2">@staff.Phone</td>
+                <td class="border-2 p-2">@(staff.Position)</td>
+                
+                <td class="border-2 p-2">
+                    <a onclick="confirmDelete()" asp-action="Delete" asp-route-id="@staff.Id">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<script>
+function confirmDelete(event) {
+    if (!confirm('Do you really want to delete?')) {
+        event.preventDefault();
+    }
+}
+</script>

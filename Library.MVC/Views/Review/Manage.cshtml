@@ -1,0 +1,45 @@
+@model IEnumerable<ReviewVM>
+
+<div class="flex justify-center mt-8">
+    <table class="table-auto border-collapse border-2 border-gray-500">
+        <thead>
+        <tr>
+            <th class="border-2 p-2">Review Date</th>
+            <th class="border-2 p-2">Book</th>
+            <th class="border-2 p-2">Customer</th>
+            <th class="border-2 p-2">Rating</th>
+            <th class="border-2 p-2 w-1/4">Comment</th>
+            <th class="border-2 p-2">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var review in Model)
+        {
+            <tr>
+                <td class="border-2 p-2">@review.ReviewDate.ToShortDateString()</td>
+                <td class="border-2 p-2">
+                    <a asp-controller="Book" asp-action="Details" asp-route-id="@review.Book.Id">"@review.Book.Title"</a>
+                </td>
+                <td class="border-2 p-2">
+                    <a asp-controller="Customer" asp-action="Manage" asp-route-id="@review.Customer.Id">"@review.Customer.FName @review.Customer.LName"</a>
+                </td>
+
+                <td class="border-2 p-2">@(review.Rating.HasValue ? review.Rating.Value : "NO RATING")</td>
+                <td class="border-2 p-2 w-1/4 break-words">@review.Comment</td>
+                <td class="border-2 p-2">
+                    <a asp-action="Edit" asp-route-id="@review.Id">Update</a> |
+                    <a onclick="confirmDelete()" asp-action="DeleteFromManagement" asp-route-id="@review.Id">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<script>
+function confirmDelete(event) {
+    if (!confirm('Do you really want to delete?')) {
+        event.preventDefault();
+    }
+}
+</script>

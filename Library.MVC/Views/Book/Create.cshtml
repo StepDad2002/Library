@@ -1,0 +1,162 @@
+@model CreateBookVM
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutWithoutSearch";
+}
+
+
+<div class="flex justify-center">
+    <form asp-action="Create" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="flex flex-wrap gap-5">
+            <div>
+
+                <div class="mb-4">
+                    <label asp-for="Title" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                    <input asp-for="Title" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                    <span asp-validation-for="Title" class="text-red-500 text-xs italic"></span>
+                </div>
+                <div class="mb-4">
+                    <label asp-for="Isbn" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                    <input asp-for="Isbn" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                    <span asp-validation-for="Isbn" class="text-red-500 text-xs italic"></span>
+                </div>
+                <div class="mb-4">
+                    <label asp-for="Categorie" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                    <input asp-for="Categorie" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                    <span asp-validation-for="Categorie" class="text-red-500 text-xs italic"></span>
+                </div>
+                <div class="mb-4">
+                    <label asp-for="Language" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                    <input asp-for="Language" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                    <span asp-validation-for="Language" class="text-red-500 text-xs italic"></span>
+                </div>
+                <div class="mb-4 max-w-[8rem]">
+                    <label asp-for="CopiesAvailable" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                    <input asp-for="CopiesAvailable" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                    <span asp-validation-for="CopiesAvailable" class="text-red-500 text-xs italic break-words"></span>
+                </div>
+                <div class="mb-4">
+                    <label asp-for="PublicationDate" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                    <input asp-for="PublicationDate" type="date" class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                    <span asp-validation-for="PublicationDate" class="text-red-500 text-xs italic"></span>
+                </div>
+            </div>
+            <div>
+                <div id="genreContainer">
+                    <div class="inline-flex">
+                        <label asp-for="Genres" class="block text-gray-700 text-sm font-bold mb-2">Genres</label>
+                        <button type="button" class="bg-green-400 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-emerald-200 font-medium rounded-lg text-sm px-1 py-0.5 text-center test" id="addGenre">Add</button>
+                    </div>
+                    <span asp-validation-for="Genres" class="text-red-500"></span>
+                </div>
+            </div>
+            <div >
+                <fieldset class="border p-4">
+                    <legend>Publisher Info</legend>
+                    <div class="mb-4">
+                        <label asp-for="Publisher.Name" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                        <input asp-for="Publisher.Name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                        <span asp-validation-for="Publisher.Name" class="text-red-500 text-xs italic"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Publisher.Phone" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                        <input asp-for="Publisher.Phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                        <span asp-validation-for="Publisher.Phone" class="text-red-500 text-xs italic"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Publisher.WebSite" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                        <input asp-for="Publisher.WebSite" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                        <span asp-validation-for="Publisher.WebSite" class="text-red-500 text-xs italic"></span>
+                    </div>
+                </fieldset>
+                <fieldset class="border p-4">
+                    <legend>Shelf (optional)</legend>
+                    <select asp-for="ShelfId">
+                    <option value="null">------</option>
+                        @foreach (var shelf in ViewBag.Shelves)
+                        {
+                            <option value="@shelf.Id">@shelf.Name</option>
+                        }
+                    </select>
+                </fieldset>
+            </div>
+            <div >
+                <fieldset class="border p-4">
+                    <legend>Authors</legend>
+                    <div id="authorContainer">
+                        <div class="inline-flex">
+                            <label asp-for="Authors" class="block text-gray-700 text-sm font-bold mb-2">Authors</label>
+                            <button type="button" class="bg-green-400 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-emerald-200 font-medium rounded-lg text-sm px-1 py-0.5 text-center test" id="addAuthor">Add</button>
+                        </div>
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            var dataErrors = ViewData.ModelState.Where(x => x.Key.Contains("Author"))
+                                .SelectMany(x => x.Value.Errors.Select(x => x.ErrorMessage));
+                            string error = string.Join("\n",dataErrors);
+                            <div class="text-red-500">@error</div>
+                        }
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="flex items-center justify-between">
+            <button type="submit" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Create
+            </button>
+        </div>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function() {
+           var counter = 0;
+       
+           // Функция для добавления нового поля ввода
+           function addGenresInputField() {
+               var newInputField = '<div class="flex"><input type="text" name="Genres" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>'+
+               '<button type="button" id="removeGenre"  class="bg-red-400 rounded-lg text-black">Rem</button></div>';
+               $('#genreContainer').append(newInputField);
+               counter++;
+           }
+       
+           // Добавить новое поле ввода при нажатии на кнопку "+"
+           $('#addGenre').click(function() {
+               addGenresInputField();
+           });
+       
+           // Удалить поле ввода при нажатии на кнопку "-"
+           $('#genreContainer').on('click', '#removeGenre', function() {
+               $(this).parent().remove();
+           });
+            addGenresInputField();
+            
+             var authorCounter = 0;
+            
+                // Function to add new input field
+                function addAuthorInputField() {
+                      var newInputField = `<div class="flex">
+                            <input type="text" name="Authors[${authorCounter}].FName" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="First Name">
+                            <input type="text" name="Authors[${authorCounter}].LName" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Last Name"/>
+                            <input type="text" name="Authors[${authorCounter}].MName" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Middle Name"/>
+                            <button type="button" id="removeAuthor" class="bg-red-400 rounded-lg text-black">Rem</button></div>`;
+                        $('#authorContainer').append(newInputField);
+                        authorCounter++;
+                }
+            
+                // Add new input field when "+" button is clicked
+                $('#addAuthor').click(function() {
+                    addAuthorInputField();
+                });
+            
+                // Remove input field when "-" button is clicked
+                $('#authorContainer').on('click', '#removeAuthor', function() {
+                    $(this).parent().remove();
+                });
+                
+                addAuthorInputField();
+       });
+  
+    // More of your existing code here...
+    </script>

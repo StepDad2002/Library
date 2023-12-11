@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EfCoreDialogsState">
+    <option name="keyValueStorage">
+      <map>
+        <entry key="Common:2394e424-0c41-47a6-b067-a2b9279c59f2:dbContext" value="Library.Persistance.LibraryDbContext" />
+        <entry key="Common:a3a6075f-db13-431b-af73-02b805639197:dbContext" value="Library.Identity.LibraryIdentityDbContext" />
+        <entry key="Common:buildConfiguration" value="Debug" />
+        <entry key="Common:c7565951-f643-4acf-a344-9a116cdacb9d:dbContext" value="Library.Identity.LibraryIdentityDbContext" />
+        <entry key="Common:noBuild" value="false" />
+        <entry key="Common:outputFolder" value="Migrations" />
+        <entry key="Common:useDefaultConnection" value="true" />
+      </map>
+    </option>
+  </component>
+</project>

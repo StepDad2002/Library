@@ -1,0 +1,122 @@
+@model AuthorVM
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+    var isStaffLoggedIn = Context.Session.GetString("IsStaffLoggedIn") == "true";
+}
+
+<div class="flex justify-center gap-x-4 w-screen h-auto">
+    <div class="max-w-[25%] my-10 bg-white rounded-lg shadow-md p-5 flex-grow-0">
+        <img class="w-32 h-32 rounded-s mx-auto" src="~/img/person-rays-solid.svg" alt="Profile picture">
+        <h2 class="text-center text-2xl font-semibold mt-3 max-w-[20rem] break-words">@Model.FName @Model.MName</h2>
+        <h2 class="text-center text-2xl font-semibold mt-3 max-w-[20rem] break-words">@Model.LName</h2>
+        <p class="text-center text-gray-600 mt-1 max-w-[20rem] break-words">Birthday: @(Model.BirthDay?.ToShortDateString() ?? "No information")</p>
+        @if (!string.IsNullOrWhiteSpace(Model.Biography))
+        {
+            <div class="rounded-xl mt-5 mb-2 bg-gray-200  p-3">
+
+                <h3 class="text-xl font-semibold">Bio</h3>
+                <p class="text-gray-600 mt-2 max-w-[20rem] break-words">@Model.Biography</p>
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(Model.Nationality))
+        {
+            <div class="rounded-xl mt-5 mb-2 bg-gray-200  p-3">
+
+                <h3 class="text-xl font-semibold">Nationality</h3>
+                <p class="text-gray-600 mt-2">@Model.Nationality</p>
+            </div>
+        }
+
+
+    </div>
+    <div class="flex flex-col justify-between my-10 bg-white rounded-lg shadow-md p-5 w-96">
+        <h4 class="text-center text-2xl font-semibold">Books</h4>
+        <ul class="w-full my-4 text-sm font-medium text-gray-900 bg-white border border-gray-200 h-48 overflow-y-auto rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+            @foreach (var book in Model.Books)
+            {
+                <li class="flex justify-between w-full px-4 py-2 my-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                    <a asp-controller="Book" asp-action="Details" asp-route-id="@book.Id" class="hover:underline">@book.Title</a>
+                    <p>@book.PublicationDate.ToShortDateString()</p>
+                </li>
+            }
+        </ul>
+        <div class="flex flex-col">
+            @if (isStaffLoggedIn)
+            {
+                <button id="updateProductButton" data-modal-target="updateProductModal" data-modal-toggle="updateProductModal" class="bg-yellow-500 text-black rounded-lg shadow-md p-5 mt-3 text-center font-bold text-xl hover:bg-yellow-400" type="button">
+                    Update
+                </button>
+            }
+            <a asp-action="Index" class="bg-red-400 rounded-lg shadow-md p-5 mt-3 text-center font-bold text-xl hover:bg-red-600" style="color:black;">
+                <p class="w-full h-full">Back</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+@if (isStaffLoggedIn)
+{
+    <div id="updateProductModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full">
+    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
+            <!-- Modal header -->
+            <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                    Update Author
+                </h3>
+                <div asp-validation-summary="All" class="text-red-600"></div>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="updateProductModal">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <form asp-action="Edit" method="post">
+                <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                    <input asp-for="Id" value="@Model.Id" hidden="hidden">
+                    <div>
+                        <label asp-for="FName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <input type="text" asp-for="FName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ex. Apple iMac 27&ldquo;">
+                        <span asp-validation-for="FName" class="text-red-300"></span>
+                    </div>
+                    <div>
+                        <label asp-for="LName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <input type="text" asp-for="LName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ex. Apple iMac 27&ldquo;">
+                        <span asp-validation-for="LName" class="text-red-300"></span>
+                    </div>
+                    <div>
+                        <label asp-for="MName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <input type="text" asp-for="MName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ex. Apple iMac 27&ldquo;">
+                        <span asp-validation-for="MName" class="text-red-300"></span>
+                    </div>
+                    <div>
+                        <label asp-for="BirthDay" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <input type="date" asp-for="BirthDay" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ex. Apple iMac 27&ldquo;">
+                        <span asp-validation-for="BirthDay" class="text-red-300"></span>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label asp-for="Biography" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <textarea asp-for="Biography" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write a description...">Standard glass, 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US</textarea>
+                        <span asp-validation-for="Biography" class="text-red-300"></span>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label asp-for="Nationality" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <input asp-for="Nationality" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                        <span asp-validation-for="Nationality" class="text-red-300"></span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Update author
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+}

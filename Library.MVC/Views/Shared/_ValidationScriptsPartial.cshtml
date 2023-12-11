@@ -1,0 +1,19 @@
+﻿
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+<script>
+$.validator.addMethod('DateNotInFuture', function (value, element, params) {
+    if (!value) {
+        // Ignore empty values, handle them with a 'Required' attribute if necessary
+        return true;
+    }
+    var date = new Date(value);
+    return date <= new Date();
+});
+
+$.validator.unobtrusive.adapters.add('DateNotInFuture', function (options) {
+    options.rules['DateNotInFuture'] = {};
+    options.messages['DateNotInFuture'] = options.message;
+});
+</script>

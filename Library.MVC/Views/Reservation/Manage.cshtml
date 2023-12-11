@@ -1,0 +1,52 @@
+@model IEnumerable<ReservationListVM>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutWithoutSearch";
+}
+
+<div class="flex justify-center mt-8">
+    <table class="table-auto border-collapse border-2 border-gray-500">
+        <thead>
+        <tr>
+            <th class="border-2 p-2">Reservation Date</th>
+            <th class="border-2 p-2">Due Date</th>
+            <th class="border-2 p-2">Customer</th>
+            <th class="border-2 p-2">Book</th>
+            <th class="border-2 p-2">Amount</th>
+            <th class="border-2 p-2">Status</th>
+            <th class="border-2 p-2">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td class="border-2 p-2">@reservation.ReservationDate.ToShortDateString()</td>
+                <td class="border-2 p-2">@reservation.DueDate.ToShortDateString()</td>
+                <td class="border-2 p-2">
+                    <a asp-controller="Customer" asp-action="Manage" asp-route-id="@reservation.Customer.Id">"@reservation.Customer.FName @reservation.Customer.LName"</a>
+                </td>
+                <td class="border-2 p-2">
+                    <a asp-controller="Book" asp-action="Details" asp-route-id="@reservation.Book.Id">"@reservation.Book.Title"</a>
+                </td>
+
+                <td class="border-2 p-2">@reservation.Amount</td>
+                <td class="border-2 p-2 w-1/4 break-words">@reservation.Status</td>
+                <td class="border-2 p-2">
+                    <a asp-action="Edit" asp-route-id="@reservation.Id">Update</a> |
+                    <a onclick="confirmDelete()" asp-action="DeleteFromManagement" asp-route-id="@reservation.Id">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<script>
+function confirmDelete(event) {
+    if (!confirm('Do you really want to delete?')) {
+        event.preventDefault();
+    }
+}
+</script>
