@@ -4,12 +4,13 @@ namespace Library.MVC.Models.Review;
 
 public class CreateReviewVM
 {
+    [Range(1,10)]
     public int? Rating { get; set; }
-    [MaxLength(500)]
+    [Required, MaxLength(500)]
     public string Comment { get; set; }
-    [Range(0, int.MaxValue, MinimumIsExclusive = true)]
+    [Required, Range(0, int.MaxValue, MinimumIsExclusive = true)]
     public int BookId { get; set; }
-    [Range(0, int.MaxValue, MinimumIsExclusive = true)]
+    [Required, Range(0, int.MaxValue, MinimumIsExclusive = true)]
     public int CustomerId { get; set; }
 
     public DateTime ReviewDate { get => DateTime.Now; }

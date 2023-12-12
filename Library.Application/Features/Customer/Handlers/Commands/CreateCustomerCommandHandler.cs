@@ -13,7 +13,7 @@ public class CreateCustomerCommandHandler (IUnitOfWork unitOfWork, IMapper mappe
     public async Task<BaseCommandResponse> Handle(CreateCustomerCommand request, CancellationToken cancellationToken)
     {
         var commandResponse = new BaseCommandResponse();
-        var validator = new CreateCustomerValidator();
+        var validator = new CreateCustomerValidator(unitOfWork);
         var validationResult = await validator.ValidateAsync(request.Customer);
 
         if (validationResult.IsValid == false)

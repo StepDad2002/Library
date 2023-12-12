@@ -150,3 +150,4 @@ C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.API
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.API\bin\Debug\net8.0\AutoMapper.Extensions.EnumMapping.dll
+C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.API\obj\Debug\net8.0\Library.API.sourcelink.json

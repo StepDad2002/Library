@@ -17,10 +17,10 @@ public class CreateStaffVM : IPersonVM
      RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "Please, use only letters in last name")]
     public string LName { get; set; }
     
-    [RegularExpression(@"^\d{3}-\d{3}-\d{2}-\d{2}$")]
+    [Required, RegularExpression(@"^\d{3}-\d{3}-\d{2}-\d{2}$")]
     public string Phone { get; set; }
     
-    [RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")]
+    [Required, RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")]
     public string Email { get; set; }
     [IsEnumName(typeof(Position)),Required]
     public string Position { get; set; }
@@ -28,5 +28,6 @@ public class CreateStaffVM : IPersonVM
     public decimal Salary { get; set; }
     public DateTime HireDate { get => DateTime.Now; }
 
+    [Required]
     public string Password { get; set; }
 }

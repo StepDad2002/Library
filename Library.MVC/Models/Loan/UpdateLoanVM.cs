@@ -10,8 +10,9 @@ public class UpdateLoanVM
     [DateRange("1/1/1793", "12/31/9999"), DateNotInFuture]
     public DateTime DueDate { get; set; }
     
-    [DateRange("1/1/1793", "12/31/9999"), DateNotInFuture]
+    [Required, DateRange("1/1/1793", "12/31/9999"), DateNotInFuture]
     public DateTime ReturnedDate { get; set; }
 
+    [Required, Range(1, int.MaxValue, MinimumIsExclusive = false)]
     public decimal FineAmount { get; set; }
 }

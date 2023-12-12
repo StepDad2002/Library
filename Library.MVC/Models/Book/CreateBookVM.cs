@@ -27,6 +27,7 @@ public class CreateBookVM : IBookVM
     [DateRange( "1/1/0001", "12/31/9999", ErrorMessage = "Allowed date range is '1/1/0001' to '12/31/9999'"),DateNotInFuture(ErrorMessage = "The date can not be greater than today")]
     public DateTime PublicationDate { get; set; }
 
+    [Range(0, Int32.MaxValue, MinimumIsExclusive = true)]
     public int? ShelfId { get; set; }
     
     [Required]

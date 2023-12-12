@@ -5,11 +5,11 @@ namespace Library.MVC.Models.Reservation;
 
 public class CreateReservationVM 
 {
-    [Range(0, int.MaxValue, MinimumIsExclusive = true)]
+    [Required, Range(0, int.MaxValue, MinimumIsExclusive = true)]
     public int CustomerId { get; set; }
-    [Range(0, int.MaxValue, MinimumIsExclusive = true)]
+    [Required, Range(0, int.MaxValue, MinimumIsExclusive = true)]
     public int BookId { get; set; }
-    [Range(0, 5000, MinimumIsExclusive = true)]
+    [Required, Range(0, 5000, MinimumIsExclusive = true)]
     public int Amount { get; set; }
 
     [DateCompare(false, nameof(DueDate))]
@@ -18,6 +18,6 @@ public class CreateReservationVM
         get => DateTime.Now;
     }
 
-    [DateRange( "1/1/0001", "12/31/9999", ShouldNotBeInFuture = true, ErrorMessage = "Invalid Date")]
+    [Required, DateRange( "1/1/0001", "12/31/9999", ShouldNotBeInFuture = true, ErrorMessage = "Invalid Date")]
     public DateTime DueDate { get; set; }
 }

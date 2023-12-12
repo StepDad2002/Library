@@ -30,7 +30,7 @@ public class AuthorRepository(LibraryDbContext _dbContext) : GenericRepository<A
         return await _dbContext.Authors
             .Include(x => x.Books)
             //TODO CHANGE TO X.BOOKS>COUNT > 5
-            .Where(x => x.Books.Count > limit)
+            .Where(x => x.Books.Count > 3)
             .Take(limit)
             .ToListAsync();
     }

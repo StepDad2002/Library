@@ -383,3 +383,4 @@ C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.MVC
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.MVC\bin\Debug\net8.0\Library.Domain.dll
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.MVC\bin\Debug\net8.0\Library.Application.pdb
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.MVC\bin\Debug\net8.0\Library.Domain.pdb
+C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.MVC\obj\Debug\net8.0\Library.MVC.sourcelink.json

@@ -17,3 +17,4 @@ C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.Per
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.Persistence\obj\Debug\net8.0\Library.Persistence.pdb
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.Persistence\obj\Debug\net8.0\Library.Persistence.genruntimeconfig.cache
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.Persistence\obj\Debug\net8.0\ref\Library.Persistence.dll
+C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.Persistence\obj\Debug\net8.0\Library.Persistence.sourcelink.json

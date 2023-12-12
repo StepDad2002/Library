@@ -20,7 +20,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f44619d-cb9f-4511-a118-1997c475dc8e" name="Changes" comment="Almost final version" />
+    <list default="true" id="8f44619d-cb9f-4511-a118-1997c475dc8e" name="Changes" comment="Almost final version">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/DTOs/Customer/Validators/CreateCustomerValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/DTOs/Customer/Validators/CreateCustomerValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/Features/Customer/Handlers/Commands/CreateCustomerCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/Features/Customer/Handlers/Commands/CreateCustomerCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Author/AuthorVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Author/AuthorVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Book/CreateBookVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Book/CreateBookVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Book/UpdateBookVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Book/UpdateBookVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/FinePayment/CreateFinePaymentVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/FinePayment/CreateFinePaymentVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Loan/CreateLoanVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Loan/CreateLoanVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Loan/UpdateLoanVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Loan/UpdateLoanVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Reservation/CreateReservationVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Reservation/CreateReservationVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Reservation/UpdateReservationVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Reservation/UpdateReservationVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Review/CreateReviewVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Review/CreateReviewVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Review/UpdateReviewVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Review/UpdateReviewVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Staff/CreateStaffVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Staff/CreateStaffVM.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,12 +54,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/0c53ee5c91f047f387400d094b3581c4267420/34/02bcde49/ModelSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/0c53ee5c91f047f387400d094b3581c4267420/42/5286ab15/CoreResources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/368b103967cf41e88c4ab2f200944e6314020/c5/6bd115dc/JwtRegisteredClaimNames.cs" root0="SKIP_HIGHLIGHTING" />
@@ -167,6 +176,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/f3e11c961d12b2fefb2e241260357683bec19a3e8943c3398e4e4e57515e3140/DateOnly.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/f9342fb513b7b524925c79d9822cd3ecaf072c50231aa3b469875f4c2cdf/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/fb367341658aaedd7de424d4c9189db33c4387e268dcc4011918569442ab12/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/cherm/OneDrive/Рабочий стол/OOA_Projects/Library/Library.Application/Features/Reservation/Requests/Queries/GetReservationRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library.MVC/Services/Base/ServiceClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -194,47 +204,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "1.0574052",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "database.data.extractors.current.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "master",
-    "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>f94e8a23-6b9b-443b-a983-e7a5dcd1fe59</source-data-source-id>\n        <source-path>database/&quot;Library_Development&quot;</source-path>\n        <target-data-source-id>f94e8a23-6b9b-443b-a983-e7a5dcd1fe59</target-data-source-id>\n        <target-path>database/&quot;Library_Development&quot;/schema/&quot;Book&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
-    "javascript.nodejs.core.library.configured.version": "20.10.0",
-    "javascript.nodejs.core.library.typings.version": "20.10.0",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "settings.editor.splitter.proportion": "0.32051283",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\JetBrains Rider 2021.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;1.0574052&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;f94e8a23-6b9b-443b-a983-e7a5dcd1fe59&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;database/&amp;quot;Library_Development&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;f94e8a23-6b9b-443b-a983-e7a5dcd1fe59&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;database/&amp;quot;Library_Development&amp;quot;/schema/&amp;quot;Book&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.10.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.0&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.32051283&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\JetBrains Rider 2021.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver.localdb",
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlserver&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/Set Highlighting Language": [
-      "C#",
-      "Angular2Svg"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/Set Highlighting Language&quot;: [
+      &quot;C#&quot;,
+      &quot;Angular2Svg&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\cherm\\AppData\\Local\\JetBrains\\Shared\\vAny\\DecompilerCache",
-      "C:\\Users\\cherm\\AppData\\Local\\JetBrains\\Shared\\vAny\\SourcesCache",
-      "C:\\Users\\cherm\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\cherm\\AppData\\Local\\JetBrains\\Shared\\vAny\\DecompilerCache&quot;,
+      &quot;C:\\Users\\cherm\\AppData\\Local\\JetBrains\\Shared\\vAny\\SourcesCache&quot;,
+      &quot;C:\\Users\\cherm\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value=" public string FName { get; set; }          publicddd string LName { get; set; }          public string? Email { get; set; }          public string Phone { get; set; }" />

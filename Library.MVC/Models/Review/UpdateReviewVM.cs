@@ -5,8 +5,8 @@ namespace Library.MVC.Models.Review;
 public class UpdateReviewVM
 {
     public int Id { get; set; }
-    [Range(0,10, MaximumIsExclusive = false,MinimumIsExclusive = false)]
+    [Range(1,10)]
     public int? Rating { get; set; }
-    [MaxLength(500)]
+    [Required, MaxLength(500)]
     public string Comment { get; set; }
 }

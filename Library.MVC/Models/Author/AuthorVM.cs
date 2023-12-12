@@ -5,5 +5,5 @@ namespace Library.MVC.Models.Author;
 
 public class AuthorVM : UpdateAuthorVM
 {
-    [MinLength(1)] public ICollection<BookNoReferencesVM> Books { get; set; }
+    public ICollection<BookNoReferencesVM> Books { get; set; }
 }

@@ -24,9 +24,9 @@ public class UpdateBookVM : IBookVM
     public string Isbn { get; set; }
 
     [Required] public string Categorie { get; set; }
-    [Required, MinLength(1)] public string[] Genres { get; set; }
+    [Required, MinLength(1, ErrorMessage = "Book must contain at least one genre"), NotEmpty(ErrorMessage = "Genre can not be empty")] public string[] Genres { get; set; }
     [Required] public string Language { get; set; }
-    [Required] public int CopiesAvailable { get; set; }
+    [Required ,Range(0,30000,MinimumIsExclusive = false,ErrorMessage = "The value for {0} must be greater or equat to 1 and less then or equal to 30000")] public int CopiesAvailable { get; set; }
 
     [DateRange("1/1/0001", "12/31/9999"), DateNotInFuture]
     public DateTime PublicationDate { get; set; }
