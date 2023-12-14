@@ -63,7 +63,7 @@ public class BookService(ILocalStorageService localStorage, IClient client, IMap
         }
     }
 
-    public async Task<Response<int>> ReplaceBook(int id, int shelfId)
+    public async Task<Response<int>> ReplaceBook(int id, int? shelfId)
     {
         try
         {

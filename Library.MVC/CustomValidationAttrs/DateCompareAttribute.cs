@@ -7,7 +7,7 @@ public class DateCompareAttribute(bool date1ShouldBeGreater, string propertyToCo
     protected override ValidationResult IsValid(object value, ValidationContext validationContext)
     {
         var propertyInfo = validationContext.ObjectType.GetProperty(propertyToCompare);
-        var date2Value = (DateTime)propertyInfo.GetValue(validationContext.ObjectInstance, null);
+        var date2Value = (DateTime)propertyInfo.GetValue(validationContext.ObjectInstance);
 
         var date1Value = (DateTime)value;
 

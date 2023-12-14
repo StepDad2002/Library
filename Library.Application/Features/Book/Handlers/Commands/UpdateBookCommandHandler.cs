@@ -30,7 +30,16 @@ public class UpdateBookCommandHandler(IUnitOfWork unitOfWork, IMapper mapper) :
 
         if (request.ShelfId.HasValue)
         {
-            isValid = await InternalBookShelfUpdateHandling(request.ShelfId.Value, book, response);
+            if (request.ShelfId.Value == -1)
+            {
+                book.ShelfId = null;
+                await unitOfWork.BookRepository.UpdateAsync(book);
+                response.Message = "Update succeeded";
+                response.Id = book.Id;
+                isValid = true;
+            }
+            else
+                isValid = await InternalBookShelfUpdateHandling(request.ShelfId.Value, book, response);
         }
 
         if (isValid)

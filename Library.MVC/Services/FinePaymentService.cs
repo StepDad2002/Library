@@ -14,6 +14,18 @@ public class FinePaymentService(ILocalStorageService localStorage, IClient clien
         return mapper.Map<List<FinePaymentListVM>>(paymentDtos);
     }
 
+    public async Task<List<FinePaymentListVM>> GetFinePaymentsByDate(DateTime paymentDate)
+    {
+        var paymentDtos = await _client.DateAsync(paymentDate);
+        return mapper.Map<List<FinePaymentListVM>>(paymentDtos);
+    }
+
+    public async Task<List<FinePaymentListVM>> GetFinePaymentsByCustomerPhone(string phone)
+    {
+        var paymentDtos = await _client.CustPhoneAsync(phone);
+        return mapper.Map<List<FinePaymentListVM>>(paymentDtos);
+    }
+
     public async Task<FinePaymentVM> GetFinePayment(int id)
     {
         var paymentDto = await _client.FinePaymentGETAsync(id);

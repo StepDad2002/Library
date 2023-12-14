@@ -1,4 +1,5 @@
 using Library.MVC.Contracts;
+using Library.MVC.Models;
 using Library.MVC.Models.FinePayment;
 using Library.MVC.Models.Loan;
 using Microsoft.AspNetCore.Mvc;
@@ -20,6 +21,40 @@ public class LoanController(ILoanService loanService, ICustomerService customerS
         return View(loans);
     }
     
+    public async Task<IActionResult> Search(LoanSearchOptionsVM loan)
+    {
+        var loans = new List<LoanListVM>();
+
+        if (loan.DueDate.HasValue)
+        {
+            loans.AddRange(await loanService.GetLoansByDueDate(loan.DueDate.Value));
+        }
+        
+        if (loan.ReturnedDate.HasValue)
+        {
+            loans.AddRange(await loanService.GetLoansByReturnedDate(loan.ReturnedDate.Value));
+        }
+        
+        if (loan.LoanDate.HasValue)
+        {
+            loans.AddRange(await loanService.GetLoansByLoanDate(loan.LoanDate.Value));
+        }
+
+        if (!string.IsNullOrWhiteSpace(loan.BookTitle))
+        {
+            loans.AddRange(await loanService.GetLoansByBookTitle(loan.BookTitle));
+        }
+        
+        if (!string.IsNullOrWhiteSpace(loan.CustomerPhone))
+        {
+            loans.AddRange(await loanService.GetLoansByCustomerPhone(loan.CustomerPhone));
+        }
+        
+        if (loans.Count == 0)
+            return RedirectToAction(nameof(Manage));
+
+        return View(nameof(Manage), loans.DistinctBy(x => x.Id));
+    }
 
     public async Task<IActionResult> Delete(int id, string returnUrl)
     {

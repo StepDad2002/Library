@@ -33,6 +33,44 @@ public class ReviewRepository(LibraryDbContext _dbContext) : GenericRepository<R
             .ToListAsync();
     }
 
+    public async Task<IReadOnlyList<Review>?> GetReviewsByDateAsync(DateTime reviewDate)
+    {
+        return await _dbContext.Reviews
+            .Include(x => x.Book)
+            .Include(x => x.Customer)
+            .Where(x => x.ReviewDate.Year == reviewDate.Year &&
+                        x.ReviewDate.Month == reviewDate.Month &&
+                        x.ReviewDate.Day == reviewDate.Day)
+            .ToListAsync();
+    }
+
+    public async Task<IReadOnlyList<Review>?> GetReviewsByBookTitleAsync(string title)
+    {
+        return await _dbContext.Reviews
+            .Include(x => x.Book)
+            .Include(x => x.Customer)
+            .Where(x => x.Book.Title == title)
+            .ToListAsync();
+    }
+
+    public async Task<IReadOnlyList<Review>?> GetReviewsByCustomerPhoneAsync(string phone)
+    {
+        return await _dbContext.Reviews
+            .Include(x => x.Book)
+            .Include(x => x.Customer)
+            .Where(x => x.Customer.Phone == phone)
+            .ToListAsync();
+    }
+
+    public async Task<IReadOnlyList<Review>?> GetReviewsByRatingAsync(int minRating, int? maxRating)
+    {
+        return await _dbContext.Reviews
+            .Include(x => x.Book)
+            .Include(x => x.Customer)
+            .Where(x => x.Rating >= minRating && x.Rating <= maxRating)
+            .ToListAsync();
+    }
+
     public async Task<(double? RatingSum, int Count)> GetAvgRatingForBook(int reviewBookId)
     {
         var reviews = _dbContext.Reviews

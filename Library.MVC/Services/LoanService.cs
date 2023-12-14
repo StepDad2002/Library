@@ -14,6 +14,36 @@ public class LoanService(ILocalStorageService localStorage, IClient client, IMap
         return mapper.Map<List<LoanListVM>>(loanDtos);
     }
 
+    public async Task<List<LoanListVM>> GetLoansByLoanDate(DateTime date)
+    {
+        var loanDtos = await _client.Date2Async(date);
+        return mapper.Map<List<LoanListVM>>(loanDtos);
+    }
+
+    public async Task<List<LoanListVM>> GetLoansByReturnedDate(DateTime date)
+    {
+        var loanDtos = await _client.DueDateAsync(date);
+        return mapper.Map<List<LoanListVM>>(loanDtos);
+    }
+
+    public async Task<List<LoanListVM>> GetLoansByDueDate(DateTime date)
+    {
+        var loanDtos = await _client.RetDateAsync(date);
+        return mapper.Map<List<LoanListVM>>(loanDtos);
+    }
+
+    public async Task<List<LoanListVM>> GetLoansByBookTitle(string title)
+    {
+        var loanDtos = await _client.BookTitleAsync(title);
+        return mapper.Map<List<LoanListVM>>(loanDtos);
+    }
+
+    public async Task<List<LoanListVM>> GetLoansByCustomerPhone(string phone)
+    {
+        var loanDtos = await _client.CustPhone2Async(phone);
+        return mapper.Map<List<LoanListVM>>(loanDtos);
+    }
+
     public async Task<LoanVM> GetLoan(int id)
     {
         var loanDto = await _client.LoanGETAsync(id);

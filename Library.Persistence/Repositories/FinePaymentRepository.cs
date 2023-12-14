@@ -16,8 +16,30 @@ public class FinePaymentRepository(LibraryDbContext _dbContext) : GenericReposit
 
     public async Task<IReadOnlyList<FinePayment>?> GetFinePaymentsWithDetailsAsync()
     {
-       var res =  await _dbContext.FinePayments.Include(x => x.Customer)
+       var res =  await _dbContext.FinePayments
+           .Include(x => x.Customer)
             .ToListAsync();
        return res;
+    }
+
+    public async Task<IReadOnlyList<FinePayment>?> GetFinePaymentsByDateAsync(DateTime payedOn)
+    {
+        var res =  await _dbContext.FinePayments
+            .Include(x => x.Customer)
+            .Where(x => x.PaymentDate.Year == payedOn.Year &&
+                        x.PaymentDate.Month == payedOn.Month &&
+                        x.PaymentDate.Day == payedOn.Day)
+            .ToListAsync();
+
+        return res;
+    }
+
+    public async Task<IReadOnlyList<FinePayment>?> GetFinePaymentsByCustomerPhoneAsync(string phone)
+    {
+        var res =  await _dbContext.FinePayments
+            .Include(x => x.Customer)
+            .Where(x => x.Customer.Phone == phone)
+            .ToListAsync();
+        return res;
     }
 }

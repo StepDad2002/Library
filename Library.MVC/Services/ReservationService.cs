@@ -14,6 +14,36 @@ public class ReservationService(ILocalStorageService localStorage, IClient clien
         return mapper.Map<List<ReservationListVM>>(reservationDto);
     }
 
+    public async Task<List<ReservationListVM>> GetReservationsByDate(DateTime date)
+    {
+        var reservationDto = await _client.ReservDateAsync(date);
+        return mapper.Map<List<ReservationListVM>>(reservationDto);
+    }
+
+    public async Task<List<ReservationListVM>> GetReservationsByDueDate(DateTime date)
+    {
+        var reservationDto = await _client.DueDate2Async(date);
+        return mapper.Map<List<ReservationListVM>>(reservationDto);
+    }
+
+    public async Task<List<ReservationListVM>> GetReservationsByBookTitle(string title)
+    {
+        var reservationDto = await _client.BookTitle2Async(title);
+        return mapper.Map<List<ReservationListVM>>(reservationDto);
+    }
+
+    public async Task<List<ReservationListVM>> GetReservationsByCustomerPhone(string phone)
+    {
+        var reservationDto = await _client.CustPhone3Async(phone);
+        return mapper.Map<List<ReservationListVM>>(reservationDto);
+    }
+
+    public async Task<List<ReservationListVM>> GetReservationsByStatus(string status)
+    {
+        var reservationDto = await _client.StatusAsync(status);
+        return mapper.Map<List<ReservationListVM>>(reservationDto);
+    }
+
     public async Task<ReservationVM> GetReservation(int id)
     {
         var reservationDto = await _client.ReservationGETAsync(id);

@@ -1,9 +1,48 @@
+@using Library.Domain.Enums
 @model IEnumerable<ReservationListVM>
 
 @{
     ViewBag.Title = "title";
     Layout = "_LayoutWithoutSearch";
 }
+
+<div class="w-full min-h-[15rem] mx-auto p-8 rounded md:max-h-[20rem]">
+    <h2 class="text-2xl font-bold text-center mb-6 text-white">Search for Staff</h2>
+    <form asp-action="Search" asp-controller="Reservation" method="get">
+        <section class="flex flex-col md:flex-row items-center md:justify-center md:flex-wrap gap-4 ">
+            <div>
+                <label class="block text-white">Reservation Date</label>
+                <input type="date" name="ReservationDate" class="mt-1 text-red-900 block w-48 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+            </div>
+            <div>
+                <label class="block text-white">Due Date</label>
+                <input type="date" name="DueDate" class="mt-1 text-red-900 block w-48 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+            </div>
+            <div>
+                <label class="block text-white">Book Title</label>
+                <input type="text" name="BookTitle" class="mt-1 text-red-900 block w-48 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+            </div>
+            <div>
+                <label class="block text-white">Customer Phone</label>
+                <input type="text" name="CustomerPhone" class="mt-1 text-red-900 block w-48 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+            </div>
+            <div>
+                <label class="block text-white">Status</label>
+                <select name="Status" class="form-control rounded-xl text-black w-full text-center p-1">
+                    <option value="">---------</option>
+                    @foreach (var name in Enum.GetNames(typeof(Status)))
+                    {
+                        <option value="@name">@name</option>
+                    }
+                </select>
+            </div>
+
+        </section>
+        <div class="flex justify-center mt-6">
+            <button type="submit" class="w-48 py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700">Search</button>
+        </div>
+    </form>
+</div>
 
 <div class="flex justify-center mt-8">
     <table class="table-auto border-collapse border-2 border-gray-500">

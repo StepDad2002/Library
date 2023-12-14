@@ -1,4 +1,5 @@
 using Library.MVC.Contracts;
+using Library.MVC.Models;
 using Library.MVC.Models.FinePayment;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +17,26 @@ public class FinePaymentController(IFinePaymentService finePaymentService) : Con
     {
         var finePayments = await finePaymentService.GetFinePayments();
         return View(finePayments);
+    }
+    
+    public async Task<IActionResult> Search(FinePaymentSearchOptionsVM payment)
+    {
+        var payments = new List<FinePaymentListVM>();
+
+        if (payment.PayedOn.HasValue)
+        {
+            payments.AddRange(await finePaymentService.GetFinePaymentsByDate(payment.PayedOn.Value));
+        }
+
+        if (!string.IsNullOrWhiteSpace(payment.Phone))
+        {
+            payments.AddRange(await finePaymentService.GetFinePaymentsByCustomerPhone(payment.Phone));
+        }
+        
+        if (payments.Count == 0)
+            return RedirectToAction(nameof(Manage));
+
+        return View(nameof(Manage), payments.DistinctBy(x => x.Id));
     }
     
     [HttpGet]

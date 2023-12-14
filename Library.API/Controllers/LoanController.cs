@@ -19,6 +19,42 @@ public class LoanController(IMediator _mediator) : ControllerBase
         return Ok(response);
     }
     
+    [HttpGet("search/date")]
+    public async Task<ActionResult<List<LoanListDto>>> GetByLoanDate(DateTime loanDate)
+    {
+        var response = await _mediator.Send(new GetLoanByLoanDateListRequest(){LoanDate = loanDate});
+        return Ok(response);
+    }
+    
+    
+    [HttpGet("search/ret-date")]
+    public async Task<ActionResult<List<LoanListDto>>> GetByReturnedDate(DateTime retDate)
+    {
+        var response = await _mediator.Send(new GetLoanByReturnedDateListRequest(){ReturnedDate = retDate});
+        return Ok(response);
+    }
+    
+    [HttpGet("search/due-date")]
+    public async Task<ActionResult<List<LoanListDto>>> GetByDueDate(DateTime dueDate)
+    {
+        var response = await _mediator.Send(new GetLoanByDueDateListRequest(){DueDate = dueDate});
+        return Ok(response);
+    }
+    
+    [HttpGet("search/book-title")]
+    public async Task<ActionResult<List<LoanListDto>>> GetByBookTitle(string title)
+    {
+        var response = await _mediator.Send(new GetLoanByBookTitleListRequest(){BookTitle = title});
+        return Ok(response);
+    }
+    
+    [HttpGet("search/cust-phone")]
+    public async Task<ActionResult<List<LoanListDto>>> GetByCustomerPhone(string phone)
+    {
+        var response = await _mediator.Send(new GetLoanByCustomerPhoneListRequest(){Phone = phone});
+        return Ok(response);
+    }
+    
     [HttpGet("{id}")]
     public async Task<ActionResult<LoanDto>> Get(int id)
     {

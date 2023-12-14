@@ -18,3 +18,51 @@ public class GetReviewListRequestHandler(IUnitOfWork unitOfWork, IMapper mapper)
         return mapper.Map<List<ReviewDto>>(review);
     }
 }
+
+public class GetReviewByDateListRequestHandler(IUnitOfWork unitOfWork, IMapper mapper) : 
+    IRequestHandler<GetReviewByDateListRequest, List<ReviewDto>>
+{
+    public async Task<List<ReviewDto>> Handle(GetReviewByDateListRequest request, CancellationToken cancellationToken)
+    {
+        var review = await unitOfWork.ReviewRepository.GetReviewsByDateAsync(request.Date);
+        
+       
+        return mapper.Map<List<ReviewDto>>(review);
+    }
+}
+
+public class GetReviewByBookTitleListRequestHandler(IUnitOfWork unitOfWork, IMapper mapper) : 
+    IRequestHandler<GetReviewByBookTitleListRequest, List<ReviewDto>>
+{
+    public async Task<List<ReviewDto>> Handle(GetReviewByBookTitleListRequest request, CancellationToken cancellationToken)
+    {
+        var review = await unitOfWork.ReviewRepository.GetReviewsByBookTitleAsync(request.BookTitle);
+        
+       
+        return mapper.Map<List<ReviewDto>>(review);
+    }
+}
+
+public class GetReviewByCustomerPhoneListRequestHandler(IUnitOfWork unitOfWork, IMapper mapper) : 
+    IRequestHandler<GetReviewByCustomerPhoneListRequest, List<ReviewDto>>
+{
+    public async Task<List<ReviewDto>> Handle(GetReviewByCustomerPhoneListRequest request, CancellationToken cancellationToken)
+    {
+        var review = await unitOfWork.ReviewRepository.GetReviewsByCustomerPhoneAsync(request.Phone);
+        
+       
+        return mapper.Map<List<ReviewDto>>(review);
+    }
+}
+
+public class GetReviewByRatingListRequestHandler(IUnitOfWork unitOfWork, IMapper mapper) : 
+    IRequestHandler<GetReviewByRatingListRequest, List<ReviewDto>>
+{
+    public async Task<List<ReviewDto>> Handle(GetReviewByRatingListRequest request, CancellationToken cancellationToken)
+    {
+        var review = await unitOfWork.ReviewRepository.GetReviewsByRatingAsync(request.MinRating, request.MaxRating);
+        
+       
+        return mapper.Map<List<ReviewDto>>(review);
+    }
+}

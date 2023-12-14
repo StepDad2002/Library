@@ -118,7 +118,7 @@ public class BookController(IBookService bookService, IShelfService shelfService
     }
 
     [HttpPost]
-    public async Task<IActionResult> ReplaceBook(int id, int shelfId)
+    public async Task<IActionResult> ReplaceBook(int id, int? shelfId)
     {
         try
         {

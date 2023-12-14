@@ -13,7 +13,7 @@ public interface IBookService
     Task<BookLoansVM> GetBookLoans(int id);
     Task<BookReviewsVM> GetBookReviews(int id);
     Task<Response<int>> UpdateBook(UpdateBookVM book);
-    Task<Response<int>> ReplaceBook(int id, int shelfId);
+    Task<Response<int>> ReplaceBook(int id, int? shelfId);
     Task<Response<int>> CreateBook(CreateBookVM book);
     Task<Response<int>> DeleteBook(int id);
     Task<List<BookListVM>> GetTopBooks(int i);

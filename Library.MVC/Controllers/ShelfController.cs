@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Library.MVC.Controllers;
 
-public class ShelfController(IShelfService shelfService) : Controller
+public class ShelfController(IShelfService shelfService, IBookService bookService) : Controller
 {
     // GET
     public async Task<IActionResult> Index()
@@ -22,6 +22,10 @@ public class ShelfController(IShelfService shelfService) : Controller
     public async Task<IActionResult> Details(int id)
     {
         var shelf = await shelfService.GetShelf(id);
+        var books = await bookService.GetBooks();
+        var allBooks = books.Select(x => new { x.Id, x.Title });
+        var shelfBooks = shelf.Books.Select(x => new { x.Id, x.Title });
+        ViewBag.AllBooks = allBooks.Union(shelfBooks).DistinctBy(x => x.Id);
         return View(shelf);
     }
 
@@ -45,6 +49,27 @@ public class ShelfController(IShelfService shelfService) : Controller
 
         return View("Index");
     }
+    
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> PutBooksInShelf(int id, ICollection<int> bookIds)
+    {
+        try
+        {
+            var response = await shelfService.UpdateShelfBooks(id, bookIds);
+
+            if (response.Successs)
+                return RedirectToAction(nameof(Details), new {id});
+            ModelState.AddModelError("", response.ValidationErrors);
+        }
+        catch (Exception ex)
+        {
+            ModelState.AddModelError("", ex.Message);
+        }
+
+        return View("Index");
+    }
+
 
     public async Task<IActionResult> Delete(int id)
     {

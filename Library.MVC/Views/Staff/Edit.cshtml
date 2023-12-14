@@ -1,3 +1,4 @@
+@using Library.Domain.Enums
 @model UpdateStaffVM
 
 
@@ -9,7 +10,6 @@
 <div class="flex justify-center mt-8 bg-yellow-100 w-64 p-4 mx-auto rounded-2xl">
     <form asp-action="Edit" asp-controller="Staff" method="post">
         <div asp-validation-summary="ModelOnly" class="text-red-600"></div>
-        <input hidden="hidden" asp-for="Position" value="@Model.Position">
         <input hidden="hidden" asp-for="Salary" value="@Model.Salary">
         <div class="form-group">
             <label asp-for="FName" class="font-bold text-black"></label>
@@ -22,7 +22,16 @@
             <input asp-for="LName" class="form-control rounded-xl text-black w-full h-12 text-center p-1"/>
             <span asp-validation-for="LName" class="text-red-300"></span>
         </div>
-
+        <div>
+            <label asp-for="Position" class="block text-gray-700 text-sm font-bold mb-2">Position</label>
+            <select asp-for="Position" class="form-control rounded-xl text-black w-full text-center p-1">
+                @foreach (var name in Enum.GetNames(typeof(Position)))
+                {
+                    <option value="@name">@name</option>
+                }
+            </select>
+            <span asp-validation-for="Position" class="text-red-600"></span>
+        </div>
         <div class="form-group">
             <label asp-for="Email" class="font-bold text-black"></label>
             <input asp-for="Email" class="form-control rounded-xl text-black w-full text-center p-1"/>

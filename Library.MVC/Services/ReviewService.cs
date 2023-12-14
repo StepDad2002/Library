@@ -14,6 +14,30 @@ public class ReviewService(ILocalStorageService localStorage, IClient client, IM
         return mapper.Map<List<ReviewVM>>(reviewDtos);
     }
 
+    public async Task<List<ReviewVM>> GetReviewsByDate(DateTime date)
+    {
+        var reviewDtos = await _client.Date3Async(date);
+        return mapper.Map<List<ReviewVM>>(reviewDtos);
+    }
+
+    public async Task<List<ReviewVM>> GetReviewsByRating(int minRating, int? maxRating)
+    {
+        var reviewDtos = await _client.RatingAsync(minRating, maxRating);
+        return mapper.Map<List<ReviewVM>>(reviewDtos);
+    }
+
+    public async Task<List<ReviewVM>> GetReviewsByBookTitle(string title)
+    {
+        var reviewDtos = await _client.BookTitle3Async(title);
+        return mapper.Map<List<ReviewVM>>(reviewDtos);
+    }
+
+    public async Task<List<ReviewVM>> GetReviewsByCustomerPhone(string phone)
+    {
+        var reviewDtos = await _client.CustPhone4Async(phone);
+        return mapper.Map<List<ReviewVM>>(reviewDtos);
+    }
+
     public async Task<ReviewVM> GetReview(int id)
     {
         var reviewDto = await _client.ReviewGETAsync(id);

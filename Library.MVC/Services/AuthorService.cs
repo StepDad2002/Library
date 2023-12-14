@@ -21,7 +21,7 @@ public class AuthorService(ILocalStorageService localStorage, IClient httpClient
 
     public async Task<List<AuthorVM>> GetAuthorsByName(string name)
     {
-        var author = await _client.SearchAllAsync(name);
+        var author = await _client.NameAsync(name);
         return mapper.Map<List<AuthorVM>>(author);
     }
 

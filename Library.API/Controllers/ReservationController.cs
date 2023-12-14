@@ -18,6 +18,39 @@ public class ReservationController(IMediator _mediator) : ControllerBase
         var response = await _mediator.Send(new GetReservationListRequest());
         return Ok(response);
     }
+    [HttpGet("search/reserv-date")]
+    public async Task<ActionResult<List<ReservationListDto>>> GetByReservationDate(DateTime date)
+    {
+        var response = await _mediator.Send(new GetReservationByReservationDateListRequest(){ReservationDate = date});
+        return Ok(response);
+    }
+    [HttpGet("search/due-date")]
+    public async Task<ActionResult<List<ReservationListDto>>> GetByDueDate(DateTime date)
+    {
+        var response = await _mediator.Send(new GetReservationByDueDateListRequest(){DueDate = date});
+        return Ok(response);
+    }
+    
+    [HttpGet("search/book-title")]
+    public async Task<ActionResult<List<ReservationListDto>>> GetByBookTitle(string title)
+    {
+        var response = await _mediator.Send(new GetReservationByBookTitleListRequest(){BookTitle = title});
+        return Ok(response);
+    }
+    
+    [HttpGet("search/cust-phone")]
+    public async Task<ActionResult<List<ReservationListDto>>> GetByCustomerPhone(string phone)
+    {
+        var response = await _mediator.Send(new GetReservationByCustomerPhoneListRequest(){Phone = phone});
+        return Ok(response);
+    }
+    
+    [HttpGet("search/status")]
+    public async Task<ActionResult<List<ReservationListDto>>> GetByStatus(string status)
+    {
+        var response = await _mediator.Send(new GetReservationByStatusListRequest(){Status = status});
+        return Ok(response);
+    }
     
     [HttpGet("{id}")]
     public async Task<ActionResult<ReservationDto>> Get(int id)
@@ -25,6 +58,7 @@ public class ReservationController(IMediator _mediator) : ControllerBase
         var response = await _mediator.Send(new GetReservationRequest(){Id = id});
         return Ok(response);
     }
+    
     
     [HttpPost]
     public async Task<ActionResult<BaseCommandResponse>> Post([FromBody] CreateReservationDto reservation)

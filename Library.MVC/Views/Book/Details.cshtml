@@ -352,7 +352,7 @@
                         <fieldset class="border p-4">
                             <legend>Shelf (optional)</legend>
                             <select asp-for="ShelfId">
-                                <option value="null">------</option>
+                                <option value="-1">------</option>
                                 @foreach (var shelf in ViewBag.Shelves)
                                 {
                                     <option value="@shelf.Id">@shelf.Name</option>

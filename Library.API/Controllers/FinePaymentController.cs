@@ -26,6 +26,21 @@ public class FinePaymentController(IMediator _mediator) : ControllerBase
         return Ok(response);
     }
     
+    [HttpGet("search/date")]
+    public async Task<ActionResult<List<FinePaymentListDto>>> GetByPaymentDate(DateTime date)
+    {
+        var response = await _mediator.Send(new GetFinePaymentByDateListRequest(){PayedOn = date});
+        return Ok(response);
+    }
+    
+      
+    [HttpGet("search/cust-phone")]
+    public async Task<ActionResult<List<FinePaymentListDto>>> GetByCustomerPhone(string phone)
+    {
+        var response = await _mediator.Send(new GetFinePaymentByCustomerPhoneListRequest(){Phone = phone});
+        return Ok(response);
+    }
+    
     [HttpPost]
     public async Task<ActionResult<BaseCommandResponse>> Post([FromBody] CreateFinePaymentDto payment)
     {

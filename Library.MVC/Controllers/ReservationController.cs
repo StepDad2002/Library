@@ -1,4 +1,5 @@
 using Library.MVC.Contracts;
+using Library.MVC.Models;
 using Library.MVC.Models.Reservation;
 using Microsoft.AspNetCore.Mvc;
 
@@ -82,6 +83,42 @@ public class ReservationController(IReservationService reservationService) : Con
     {
         var reservations = await reservationService.GetReservations();
         return View(reservations);
+    }
+    
+    [HttpGet]
+    public async Task<IActionResult> Search(ReservationSearchOptionsVM reserv)
+    {
+        var reservs = new List<ReservationListVM>();
+
+        if (reserv.ReservationDate.HasValue)
+        {
+            reservs.AddRange(await reservationService.GetReservationsByDate(reserv.ReservationDate.Value));
+        }
+        
+        if (reserv.DueDate.HasValue)
+        {
+            reservs.AddRange(await reservationService.GetReservationsByDueDate(reserv.DueDate.Value));
+        }
+
+        if (!string.IsNullOrWhiteSpace(reserv.BookTitle))
+        {
+            reservs.AddRange(await reservationService.GetReservationsByBookTitle(reserv.BookTitle));
+        }
+        
+        if (!string.IsNullOrWhiteSpace(reserv.CustomerPhone))
+        {
+            reservs.AddRange(await reservationService.GetReservationsByCustomerPhone(reserv.CustomerPhone));
+        }
+        
+        if (!string.IsNullOrWhiteSpace(reserv.Status))
+        {
+            reservs.AddRange(await reservationService.GetReservationsByStatus(reserv.Status));
+        }
+        
+        if (reservs.Count == 0)
+            return RedirectToAction(nameof(Manage));
+
+        return View(nameof(Manage), reservs.DistinctBy(x => x.Id));
     }
 
     public async Task<IActionResult> Delete(int id, int? userId)

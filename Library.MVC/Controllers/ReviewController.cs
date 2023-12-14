@@ -1,4 +1,5 @@
 using Library.MVC.Contracts;
+using Library.MVC.Models;
 using Library.MVC.Models.Review;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -82,6 +83,39 @@ public class ReviewController(IReviewService reviewService) : Controller
     {
         var reviews = await reviewService.GetReviews();
         return View(reviews);
+    }
+    
+    public async Task<IActionResult> Search(ReviewSearchOptionsVM review)
+    {
+        List<ReviewVM> reviews = new();
+        if (review.ReviewDate.HasValue)
+        {
+            reviews.AddRange(await reviewService.GetReviewsByDate(review.ReviewDate.Value));
+        }
+
+        if (!string.IsNullOrWhiteSpace(review.BookTitle))
+        {
+            reviews.AddRange(await reviewService.GetReviewsByBookTitle(review.BookTitle));
+        }      
+        
+        if (!string.IsNullOrWhiteSpace(review.CustomerPhone))
+        {
+            reviews.AddRange(await reviewService.GetReviewsByCustomerPhone(review.CustomerPhone));
+        }
+
+        if (review.MinRating > 0 && review.MaxRating > 0)
+        {
+            reviews.AddRange(await reviewService.GetReviewsByRating(review.MinRating, review.MaxRating));
+        }
+        
+        if (review.MinRating > 0 && review.MaxRating == 0)
+        {
+            reviews.AddRange(await reviewService.GetReviewsByRating(review.MinRating, 10));
+        }
+
+        if (reviews.Count == 0)
+            return RedirectToAction("Manage");
+        return View("Manage", reviews.DistinctBy(x => x.Id));
     }
 
     public async Task<IActionResult> Delete(int id, int? userId)
