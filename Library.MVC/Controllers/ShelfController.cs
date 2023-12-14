@@ -1,4 +1,5 @@
 ﻿using Library.MVC.Contracts;
+using Library.MVC.Models.Book;
 using Library.MVC.Models.Shelf;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,9 +24,15 @@ public class ShelfController(IShelfService shelfService, IBookService bookServic
     {
         var shelf = await shelfService.GetShelf(id);
         var books = await bookService.GetBooks();
-        var allBooks = books.Select(x => new { x.Id, x.Title });
-        var shelfBooks = shelf.Books.Select(x => new { x.Id, x.Title });
-        ViewBag.AllBooks = allBooks.Union(shelfBooks).DistinctBy(x => x.Id);
+        var allBooks = new List<BookListVM>();
+        foreach (var bookListVm in books)
+        {
+            if (shelf.Books.Any(x => x.Id == bookListVm.Id))
+                continue;
+            allBooks.Add(bookListVm);
+        }
+
+        ViewBag.AllBooks = allBooks.Select(x => new { x.Id, x.Title });
         return View(shelf);
     }
 
