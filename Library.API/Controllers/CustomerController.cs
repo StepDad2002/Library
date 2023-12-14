@@ -27,6 +27,20 @@ public class CustomerController(IMediator _mediator) : ControllerBase
       return Ok(customer);
    }
    
+   [HttpGet("search/phone")]
+   public async Task<ActionResult<CustomerListDto>> GetByPhone(string phone)
+   {
+      var response = await _mediator.Send(new GetCustomerByPhoneRequest() { Phone = phone });
+      return Ok(response);
+   }
+    
+   [HttpGet("search/email")]
+   public async Task<ActionResult<CustomerListDto>> GetByEmail(string email)
+   {
+      var response = await _mediator.Send(new GetCustomerByEmailRequest() { Email = email });
+      return Ok(response);
+   }
+   
    [HttpGet("/loans")]
    public async Task<ActionResult<CustomerLoansDto>> GetLoans(int id)
    {

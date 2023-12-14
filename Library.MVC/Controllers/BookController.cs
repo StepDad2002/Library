@@ -78,7 +78,7 @@ public class BookController(IBookService bookService, IShelfService shelfService
         }
 
         if (books.Count == 0)
-            return View("_ErrorPage");
+            return RedirectToAction("Index");
 
         return View("Index", books.DistinctBy(x => x.Id));
     }

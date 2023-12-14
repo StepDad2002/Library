@@ -1,4 +1,5 @@
 using Library.MVC.Contracts;
+using Library.MVC.Models;
 using Library.MVC.Models.Staff;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,10 +8,19 @@ namespace Library.MVC.Controllers;
 public class StaffController(IStaffService staffService) : Controller
 {
     // GET
-    public IActionResult Index()
+    public async Task<IActionResult> Search(UserSearchOptionsVM user)
     {
-        return Ok();
-        //return View();
+        List<StaffListVM> staffs = new();
+        if (!string.IsNullOrWhiteSpace(user.Phone))
+        {
+            staffs.Add(await staffService.GetStaffByPhone(user.Phone));    
+        }
+        if (!string.IsNullOrWhiteSpace(user.Email))
+        {
+            staffs.Add(await staffService.GetStaffByEmail(user.Email));    
+        }
+
+        return View("Manage", staffs.DistinctBy(x => x.Id));
     }
     
     [HttpGet]

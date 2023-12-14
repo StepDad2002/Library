@@ -21,8 +21,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f44619d-cb9f-4511-a118-1997c475dc8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Library.Application/Features/Customer/Handlers/Queries/GetCustomerByEmailRequestHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library.Application/Features/Customer/Handlers/Queries/GetCustomerByPhoneRequestHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library.Application/Features/Customer/Requests/Queries/GetCustomerByEmailRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library.Application/Features/Customer/Requests/Queries/GetCustomerByPhoneRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library.Application/Features/Staff/Handlers/Queries/GetStaffByEmailRequestHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library.Application/Features/Staff/Handlers/Queries/GetStaffByPhoneRequestHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library.Application/Features/Staff/Requests/Queries/GetStaffByEmailRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library.Application/Features/Staff/Requests/Queries/GetStaffByPhoneRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library.MVC/Models/UserSearchOptionsVM.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/Controllers/CustomerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/Controllers/CustomerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/Controllers/StaffController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/Controllers/StaffController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.pdb" afterDir="false" />
@@ -30,7 +40,6 @@
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.csproj.AssemblyReference.cache" afterDir="false" />
@@ -39,14 +48,34 @@
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/ref/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/ref/Library.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/refint/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/refint/Library.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/Contracts/Persistence/ICustomerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/Contracts/Persistence/ICustomerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/Contracts/Persistence/IStaffRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/Contracts/Persistence/IStaffRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/Features/Customer/Handlers/Queries/GetCustomerRequestHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/Features/Customer/Handlers/Queries/GetCustomerRequestHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/Features/Customer/Requests/Queries/GetCustomerRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/Features/Customer/Requests/Queries/GetCustomerRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/Features/Staff/Requests/Queries/GetStaffListRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/Features/Staff/Requests/Queries/GetStaffListRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/ref/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/ref/Library.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/refint/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/refint/Library.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Contracts/ICustomerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Contracts/ICustomerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Contracts/IStaffService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Contracts/IStaffService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Controllers/AuthorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Controllers/AuthorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Controllers/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Controllers/BookController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Controllers/CustomerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Controllers/CustomerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Controllers/StaffController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Controllers/StaffController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Models/Staff/StaffListVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Models/Staff/StaffListVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Services/Base/ServiceClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Services/Base/ServiceClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Services/CustomerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Services/CustomerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Services/StaffService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Services/StaffService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Views/Customer/Manage.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Views/Customer/Manage.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Views/Staff/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Views/Staff/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Views/Staff/Manage.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Views/Staff/Manage.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/Views/User/RegisterStaff.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Views/User/RegisterStaff.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/LIBRARY" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/LIBRARY" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
@@ -56,11 +85,14 @@
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/ref/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/ref/Library.MVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/refint/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/refint/Library.MVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/Repositories/CustomerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/Repositories/CustomerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/Repositories/StaffRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/Repositories/StaffRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Persistence.dll" afterDir="false" />
@@ -216,7 +248,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/f3e11c961d12b2fefb2e241260357683bec19a3e8943c3398e4e4e57515e3140/DateOnly.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/f9342fb513b7b524925c79d9822cd3ecaf072c50231aa3b469875f4c2cdf/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/fb367341658aaedd7de424d4c9189db33c4387e268dcc4011918569442ab12/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/cherm/OneDrive/Рабочий стол/OOA_Projects/Library/Library.Application/Features/Reservation/Requests/Queries/GetReservationRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/cherm/OneDrive/Рабочий стол/OOA_Projects/Library/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library.MVC/Services/Base/ServiceClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -249,7 +281,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;1.0574052&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5396097&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;database.data.extractors.current.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -846,7 +878,8 @@
       <workItem from="1702335482787" duration="1042000" />
       <workItem from="1702464219929" duration="1260000" />
       <workItem from="1702492055369" duration="107000" />
-      <workItem from="1702492206044" duration="1007000" />
+      <workItem from="1702492206044" duration="1394000" />
+      <workItem from="1702542476317" duration="3330000" />
     </task>
     <task id="LOCAL-00001" summary="Almost final version">
       <option name="closed" value="true" />
@@ -864,7 +897,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702355242332</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Review Deletion fixed">
+      <option name="closed" value="true" />
+      <created>1702493596840</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702493596840</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -903,7 +944,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Almost final version" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Review Deletion fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Review Deletion fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

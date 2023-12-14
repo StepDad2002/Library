@@ -4,7 +4,7 @@ using Library.MVC.CustomValidationAttrs;
 
 namespace Library.MVC.Models.Staff;
 
-public class StaffListVM
+public class StaffListVM : StaffVM
 {
     public int Id { get; set; }
     [IsEnumName(typeof(Position)),Required]

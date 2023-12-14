@@ -13,4 +13,7 @@ public interface ICustomerRepository : IGenericRepository<Customer>
 
     Task<bool> ExistEmailAsync(string email);
     Task<bool> ExistPasswordAsync(string password);
+    
+    Task<Customer?> GetByEmailAsync(string email);
+    Task<Customer?> GetByPhoneAsync(string phone);
 }

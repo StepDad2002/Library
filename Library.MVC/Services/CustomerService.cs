@@ -21,6 +21,18 @@ public class CustomerService(ILocalStorageService localStorage, IClient client, 
         return mapper.Map<CustomerVm>(customerDto);
     }
 
+    public async Task<CustomerListVM?> GetCustomerByEmail(string email)
+    {
+        var customerDto = await _client.EmailAsync(email);
+        return mapper.Map<CustomerListVM>(customerDto);
+    }
+
+    public async Task<CustomerListVM?> GetCustomerByPhone(string phone)
+    {
+        var customerDto = await _client.PhoneAsync(phone);
+        return mapper.Map<CustomerListVM>(customerDto);
+    }
+
     public async Task<CustomerLoansVM> GetCustomerLoans(int id)
     {
         var customerDto = await _client.LoansAsync(id);

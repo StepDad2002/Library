@@ -1,4 +1,5 @@
 using Library.MVC.Contracts;
+using Library.MVC.Models;
 using Library.MVC.Models.Customer;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,6 +31,21 @@ public class CustomerController(ICustomerService customerService) : Controller
     {
         var customers = await customerService.GetCustomers();
         return View(customers);
+    }
+
+    public async Task<IActionResult> Search(UserSearchOptionsVM user)
+    {
+        List<CustomerListVM> customers = new();
+        if (!string.IsNullOrWhiteSpace(user.Phone))
+        {
+            customers.Add(await customerService.GetCustomerByPhone(user.Phone));    
+        }
+        if (!string.IsNullOrWhiteSpace(user.Email))
+        {
+            customers.Add(await customerService.GetCustomerByEmail(user.Email));    
+        }
+
+        return View("Manage", customers.DistinctBy(x => x.Id));
     }
 
     public async Task<IActionResult> Delete(int id)

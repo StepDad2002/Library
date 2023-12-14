@@ -8,6 +8,8 @@ public interface ICustomerService
 {
     Task<List<CustomerListVM>> GetCustomers();
     Task<CustomerVm?> GetCustomer(int id);
+    Task<CustomerListVM?> GetCustomerByEmail(string email);
+    Task<CustomerListVM?> GetCustomerByPhone(string phone);
     Task<CustomerLoansVM> GetCustomerLoans(int id);
     Task<CustomerFinePaymentsVM> GetCustomerFinePayments(int id);
     Task<CustomerReservationsVM> GetCustomerReservations(int id);

@@ -74,6 +74,18 @@ public class CustomerRepository(LibraryDbContext _dbContext) : GenericRepository
         return custPassword != null;
     }
 
+    public async Task<Customer?> GetByEmailAsync(string email)
+    {
+       return await _dbContext.Customers
+            .FirstOrDefaultAsync(x => x.Email.Equals(email));
+    }
+
+    public async Task<Customer?> GetByPhoneAsync(string phone)
+    {
+        return await _dbContext.Customers
+            .FirstOrDefaultAsync(x => x.Phone.Equals(phone));
+    }
+
 
     public async Task<Customer?> GetAsync(int id)
     {

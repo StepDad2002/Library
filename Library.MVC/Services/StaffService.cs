@@ -21,6 +21,18 @@ public class StaffService(ILocalStorageService localStorage, IClient client, IMa
         return mapper.Map<StaffVM>(staffDto);
     }
 
+    public async Task<StaffListVM> GetStaffByEmail(string email)
+    {
+        var staffDto = await _client.Email2Async(email);
+        return mapper.Map<StaffListVM>(staffDto);
+    }
+
+    public async Task<StaffListVM> GetStaffByPhone(string phone)
+    {
+        var staffDto = await _client.Phone2Async(phone);
+        return mapper.Map<StaffListVM>(staffDto);
+    }
+
     public async Task<Response<int>> UpdateStaff(UpdateStaffVM staff)
     {
         try

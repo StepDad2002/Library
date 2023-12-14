@@ -53,7 +53,7 @@ public class AuthorController(IAuthorService authorService) : Controller
         }
 
         if (authors.Count == 0)
-            return View("_ErrorPage");
+            return RedirectToAction("Index");
 
         return View("Index", authors.DistinctBy(x => x.Id));
     }

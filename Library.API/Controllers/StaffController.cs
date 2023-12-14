@@ -19,6 +19,20 @@ public class StaffController(IMediator _mediator) : ControllerBase
         return Ok(response);
     }
     
+    [HttpGet("search/phone")]
+    public async Task<ActionResult<StaffListDto>> GetByPhone(string phone)
+    {
+        var response = await _mediator.Send(new GetStaffByPhoneRequest() { Phone = phone });
+        return Ok(response);
+    }
+    
+    [HttpGet("search/email")]
+    public async Task<ActionResult<StaffListDto>> GetByEmail(string email)
+    {
+        var response = await _mediator.Send(new GetStaffByEmailRequest() { Email = email });
+        return Ok(response);
+    }
+    
     [HttpGet]
     public async Task<ActionResult<List<StaffListDto>>> Get()
     {

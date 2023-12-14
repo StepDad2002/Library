@@ -18,6 +18,16 @@ public class StaffRepository(LibraryDbContext _dbContext) : GenericRepository<St
         return staffPhone is not null;
     }
 
+    public async Task<Staff?> GetByEmailAsync(string email)
+    {
+        return await _dbContext.Staffs.AsNoTracking().FirstOrDefaultAsync(x => x.Email.Equals(email));
+    }
+
+    public async Task<Staff?> GetByPhoneAsync(string phone)
+    {
+        return await _dbContext.Staffs.FirstOrDefaultAsync(x => x.Phone.Equals(phone));
+    }
+
     public async Task<int> TryLogInAsync(string email, string password)
     {
         var customer = await _dbContext.Staffs
