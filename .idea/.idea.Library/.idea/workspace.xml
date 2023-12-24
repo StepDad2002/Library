@@ -22,56 +22,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8f44619d-cb9f-4511-a118-1997c475dc8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/ref/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/ref/Library.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/refint/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/refint/Library.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/ref/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/ref/Library.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/refint/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/refint/Library.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/Controllers/ShelfController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Controllers/ShelfController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/Views/Book/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Views/Book/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/Views/Shelf/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/Views/Shelf/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/ref/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/ref/Library.MVC.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/refint/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/refint/Library.MVC.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Persistence.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/wwwroot/css/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/wwwroot/css/input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/wwwroot/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/ref/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/ref/Library.Persistence.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/refint/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/refint/Library.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nswag.nswag" beforeDir="false" afterPath="$PROJECT_DIR$/nswag.nswag" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,47 +205,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.9161883",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "database.data.extractors.current.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "master",
-    "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>f94e8a23-6b9b-443b-a983-e7a5dcd1fe59</source-data-source-id>\n        <source-path>database/&quot;Library_Development&quot;</source-path>\n        <target-data-source-id>f94e8a23-6b9b-443b-a983-e7a5dcd1fe59</target-data-source-id>\n        <target-path>database/&quot;Library_Development&quot;/schema/&quot;Book&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
-    "javascript.nodejs.core.library.configured.version": "20.10.0",
-    "javascript.nodejs.core.library.typings.version": "20.10.0",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "settings.editor.splitter.proportion": "0.32051283",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\JetBrains Rider 2021.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.98737085&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;f94e8a23-6b9b-443b-a983-e7a5dcd1fe59&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;database/&amp;quot;Library_Development&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;f94e8a23-6b9b-443b-a983-e7a5dcd1fe59&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;database/&amp;quot;Library_Development&amp;quot;/schema/&amp;quot;Book&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.10.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.0&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.32051283&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\JetBrains Rider 2021.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver.localdb",
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlserver&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/Set Highlighting Language": [
-      "C#",
-      "Angular2Svg"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/Set Highlighting Language&quot;: [
+      &quot;C#&quot;,
+      &quot;Angular2Svg&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\cherm\\AppData\\Local\\JetBrains\\Shared\\vAny\\DecompilerCache",
-      "C:\\Users\\cherm\\AppData\\Local\\JetBrains\\Shared\\vAny\\SourcesCache",
-      "C:\\Users\\cherm\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\cherm\\AppData\\Local\\JetBrains\\Shared\\vAny\\DecompilerCache&quot;,
+      &quot;C:\\Users\\cherm\\AppData\\Local\\JetBrains\\Shared\\vAny\\SourcesCache&quot;,
+      &quot;C:\\Users\\cherm\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value=" public string FName { get; set; }          publicddd string LName { get; set; }          public string? Email { get; set; }          public string Phone { get; set; }" />
@@ -818,7 +779,13 @@
       <workItem from="1702492206044" duration="1394000" />
       <workItem from="1702542476317" duration="3330000" />
       <workItem from="1702558575765" duration="3414000" />
-      <workItem from="1702572216682" duration="1641000" />
+      <workItem from="1702572216682" duration="3195000" />
+      <workItem from="1702641955855" duration="41000" />
+      <workItem from="1702642035976" duration="234000" />
+      <workItem from="1703084378684" duration="124000" />
+      <workItem from="1703084591997" duration="806000" />
+      <workItem from="1703087444683" duration="795000" />
+      <workItem from="1703160963776" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="Almost final version">
       <option name="closed" value="true" />
@@ -852,7 +819,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702560833921</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Book replacement updated">
+      <option name="closed" value="true" />
+      <created>1702574242265</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702574242265</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -893,7 +868,8 @@
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Review Deletion fixed" />
     <MESSAGE value="Added search option: Reservations, FinePay, Loans, Reviews" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added search option: Reservations, FinePay, Loans, Reviews" />
+    <MESSAGE value="Book replacement updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Book replacement updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1118,6 +1094,20 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library.MVC/Views/Book/Details.cshtml</url>
+          <line>217</line>
+          <properties documentPath="C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.MVC\Views\Book\Details.cshtml" initialLine="217" isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+            <startOffsets>
+              <option value="-1" />
+            </startOffsets>
+            <endOffsets>
+              <option value="-1" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="310" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

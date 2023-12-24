@@ -1,7 +1,7 @@
 @model AuthorVM
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = Model.FName + " " + Model.LName;
     Layout = "_Layout";
     var isStaffLoggedIn = Context.Session.GetString("IsStaffLoggedIn") == "true";
 }

@@ -1,7 +1,7 @@
 @model ShelfVM
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Shelf: " + Model.Name;
     Layout = "_Layout";
     var isStaffLoggedIn = Context.Session.GetString("IsStaffLoggedIn") == "true";
 }

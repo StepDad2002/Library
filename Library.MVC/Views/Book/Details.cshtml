@@ -1,7 +1,7 @@
 @model BookVM
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = Model.Title;
     Layout = "_Layout";
     int userId = Convert.ToInt32(Context.Session.GetString("UserID"));
     var isStaffLoggedIn = Context.Session.GetString("IsStaffLoggedIn") == "true";

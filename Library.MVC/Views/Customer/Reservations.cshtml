@@ -1,8 +1,7 @@
-@using System.Drawing
 @model CustomerReservationsVM
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "My reservations";
     Layout = "_Layout";
     var isCustomerLoggedIn = Context.Session.GetString("IsCustomerLoggedIn") == "true";
     var userId = Convert.ToInt32(Context.Session.GetString("UserID"));

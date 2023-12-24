@@ -1,7 +1,7 @@
 @model CustomerReviewsVM
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "My reviews";
     Layout = "_Layout";
     var isCustomerLoggedIn = Context.Session.GetString("IsCustomerLoggedIn") == "true";
     var userId = Convert.ToInt32(Context.Session.GetString("UserID"));

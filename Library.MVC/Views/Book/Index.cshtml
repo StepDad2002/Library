@@ -1,7 +1,7 @@
 @model IEnumerable<BookListVM>
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Books";
     Layout = "_LayoutWithoutSearch";
     var isStaffLoggedIn = Context.Session.GetString("IsStaffLoggedIn") == "true";
 }

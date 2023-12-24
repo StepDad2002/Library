@@ -1,7 +1,7 @@
 @model CustomerLoansVM
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "My loans";
     Layout = "_LayoutWithoutSearch";
     var isCustomerLoggedIn = Context.Session.GetString("IsCustomerLoggedIn") == "true";
     var userId = Convert.ToInt32(Context.Session.GetString("UserID"));
