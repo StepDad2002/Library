@@ -161,7 +161,10 @@ namespace Library.Persistance.Migrations
                     b.HasIndex(new[] { "Isbn" }, "IX_Books_ISBN")
                         .IsUnique();
 
-                    b.ToTable("Books", "Book");
+                    b.ToTable("Books", "Book", t =>
+                        {
+                            t.HasCheckConstraint("CK_Book_CopiesAvailable", "CopiesAvailable >= 0");
+                        });
                 });
 
             modelBuilder.Entity("Library.Domain.Entities.Schemas.BookSchema.Publisher", b =>

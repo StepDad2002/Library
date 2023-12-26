@@ -21,18 +21,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f44619d-cb9f-4511-a118-1997c475dc8e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/wwwroot/css/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/wwwroot/css/input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.MVC/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/wwwroot/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nswag.nswag" beforeDir="false" afterPath="$PROJECT_DIR$/nswag.nswag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LibraryTESTS/REPOS/BookRepositoryTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LibraryTESTS/REPOS/GenericRepositoryTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/Repositories/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/Repositories/UnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Library.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryTESTS/LibraryTESTS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryTESTS/LibraryTESTS.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryTESTS/UnitTest1.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +43,38 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="tests" />
+                    <option name="lastUsedInstant" value="1703408025" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1703407894" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/0c53ee5c91f047f387400d094b3581c4267420/34/02bcde49/ModelSource.cs" root0="SKIP_HIGHLIGHTING" />
@@ -177,8 +199,8 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/f3e11c961d12b2fefb2e241260357683bec19a3e8943c3398e4e4e57515e3140/DateOnly.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/f9342fb513b7b524925c79d9822cd3ecaf072c50231aa3b469875f4c2cdf/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/fb367341658aaedd7de424d4c9189db33c4387e268dcc4011918569442ab12/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/cherm/OneDrive/Рабочий стол/OOA_Projects/Library/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library.MVC/Services/Base/ServiceClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/cherm/OneDrive/Рабочий стол/OOA_Projects/Library/Library.MVC/Views/Book/Create.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="HttpClientSelectedEnvironments">
@@ -192,7 +214,7 @@
     <option name="ignoreSourceCode" value="false" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -213,7 +235,7 @@
     &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.98737085&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;database.data.extractors.current.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;tests&quot;,
     &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;f94e8a23-6b9b-443b-a983-e7a5dcd1fe59&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;database/&amp;quot;Library_Development&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;f94e8a23-6b9b-443b-a983-e7a5dcd1fe59&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;database/&amp;quot;Library_Development&amp;quot;/schema/&amp;quot;Book&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.10.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.0&quot;,
@@ -720,9 +742,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.post-requests | Send POST request with json body" />
+        <item itemvalue="HTTP Request.Library.API | #2" />
         <item itemvalue="HTTP Request.get-requests | GET request with parameter" />
         <item itemvalue="HTTP Request.get-requests | GET request with a header" />
-        <item itemvalue="HTTP Request.Library.API | #2" />
         <item itemvalue="HTTP Request.All in Library.API" />
       </list>
     </recent_temporary>
@@ -786,6 +808,7 @@
       <workItem from="1703084591997" duration="806000" />
       <workItem from="1703087444683" duration="795000" />
       <workItem from="1703160963776" duration="49000" />
+      <workItem from="1703406564654" duration="7554000" />
     </task>
     <task id="LOCAL-00001" summary="Almost final version">
       <option name="closed" value="true" />
@@ -827,7 +850,39 @@
       <option name="project" value="LOCAL" />
       <updated>1702574242265</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Title added">
+      <option name="closed" value="true" />
+      <created>1703407036710</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703407036711</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Test project added">
+      <option name="closed" value="true" />
+      <created>1703407513704</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703407513704</updated>
+    </task>
+    <task id="LOCAL-00008" summary="few files for tests">
+      <option name="closed" value="true" />
+      <created>1703407629479</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703407629479</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ReservationSearchOptionsVM added">
+      <option name="closed" value="true" />
+      <created>1703407942516</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703407942516</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -835,6 +890,21 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -850,7 +920,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="tests" />
                       </list>
                     </value>
                   </entry>
@@ -869,7 +939,11 @@
     <MESSAGE value="Review Deletion fixed" />
     <MESSAGE value="Added search option: Reservations, FinePay, Loans, Reviews" />
     <MESSAGE value="Book replacement updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Book replacement updated" />
+    <MESSAGE value="Title added" />
+    <MESSAGE value="Test project added" />
+    <MESSAGE value="few files for tests" />
+    <MESSAGE value="ReservationSearchOptionsVM added" />
+    <option name="LAST_COMMIT_MESSAGE" value="ReservationSearchOptionsVM added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

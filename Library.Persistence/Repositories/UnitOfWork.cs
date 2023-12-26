@@ -6,11 +6,9 @@ namespace Library.Persistance.Repositories;
 
 public class UnitOfWork(LibraryDbContext context) : IUnitOfWork
 {
-    private readonly LibraryDbContext _context = context;
-
     public void Dispose()
     {
-        _context.Dispose();
+        context.Dispose();
         GC.SuppressFinalize(this);
     }
 
@@ -18,74 +16,74 @@ public class UnitOfWork(LibraryDbContext context) : IUnitOfWork
 
     public IAuthorRepository AuthorRepository
     {
-        get => _authorRepository ?? new AuthorRepository(_context);
+        get => _authorRepository ?? new AuthorRepository(context);
     }
 
     private IBookRepository _bookRepository;
 
     public IBookRepository BookRepository
     {
-        get => _bookRepository ?? new BookRepository(_context);
+        get => _bookRepository ?? new BookRepository(context);
     }
 
     private ICustomerRepository _customerRepository;
 
     public ICustomerRepository CustomerRepository
     {
-        get => _customerRepository ?? new CustomerRepository(_context);
+        get => _customerRepository ?? new CustomerRepository(context);
     }
 
     private IFinePaymentRepository _finePaymentRepository;
 
     public IFinePaymentRepository FinePaymentRepository
     {
-        get => _finePaymentRepository ?? new FinePaymentRepository(_context);
+        get => _finePaymentRepository ?? new FinePaymentRepository(context);
     }
 
     private ILoanRepository _loanRepository;
 
     public ILoanRepository LoanRepository
     {
-        get => _loanRepository ?? new LoanRepository(_context);
+        get => _loanRepository ?? new LoanRepository(context);
     }
 
     private IPublisherRepository _publisherRepository;
 
     public IPublisherRepository PublisherRepository
     {
-        get => _publisherRepository ?? new PublisherRepository(_context);
+        get => _publisherRepository ?? new PublisherRepository(context);
     }
 
     private IReservationRepository _reservationRepository;
 
     public IReservationRepository ReservationRepository
     {
-        get => _reservationRepository ?? new ReservationRepository(_context);
+        get => _reservationRepository ?? new ReservationRepository(context);
     }
 
     private IReviewRepository _reviewRepository;
 
     public IReviewRepository ReviewRepository
     {
-        get => _reviewRepository ?? new ReviewRepository(_context);
+        get => _reviewRepository ?? new ReviewRepository(context);
     }
 
     private IShelfRepository _shelfRepository;
 
     public IShelfRepository ShelfRepository
     {
-        get => _shelfRepository ?? new ShelfRepository(_context);
+        get => _shelfRepository ?? new ShelfRepository(context);
     }
 
     private IStaffRepository _staffRepository;
 
     public IStaffRepository StaffRepository
     {
-        get => _staffRepository ?? new StaffRepository(_context);
+        get => _staffRepository ?? new StaffRepository(context);
     }
 
     public async Task<int> SaveAsync()
     {
-        return await _context.SaveChangesAsync();
+        return await context.SaveChangesAsync();
     }
 }

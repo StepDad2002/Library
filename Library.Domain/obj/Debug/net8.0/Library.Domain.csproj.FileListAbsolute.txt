@@ -9,3 +9,4 @@ C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.Dom
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.Domain\obj\Debug\net8.0\refint\Library.Domain.dll
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.Domain\obj\Debug\net8.0\Library.Domain.pdb
 C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.Domain\obj\Debug\net8.0\ref\Library.Domain.dll
+C:\Users\cherm\OneDrive\Рабочий стол\OOA_Projects\Library\Library.Domain\obj\Debug\net8.0\Library.Domain.sourcelink.json

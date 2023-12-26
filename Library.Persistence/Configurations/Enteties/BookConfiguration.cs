@@ -11,7 +11,10 @@ public class BookConfiguration : IEntityTypeConfiguration<Book>
     public void Configure(EntityTypeBuilder<Book> builder)
     {
         builder.Property(e => e.Id).UseIdentityColumn();
-        builder.ToTable("Books", "Book");
+        builder.ToTable("Books", "Book", b =>
+        {
+            b.HasCheckConstraint("CK_Book_CopiesAvailable", "CopiesAvailable >= 0");
+        });
 
         builder.HasIndex(e => e.Isbn, "IX_Books_ISBN").IsUnique();
 
