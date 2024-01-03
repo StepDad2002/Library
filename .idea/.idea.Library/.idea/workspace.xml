@@ -21,12 +21,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f44619d-cb9f-4511-a118-1997c475dc8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LibraryTESTS/REPOS/BookRepositoryTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryTESTS/REPOS/GenericRepositoryTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Persistence/Repositories/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/Repositories/UnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LibraryTESTS/Customers/Queries/CustomerRequestHandlersTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LibraryTESTS/Mocks/MockCustomerRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LibraryTESTS/Mocks/MockUnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/ref/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/ref/Library.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/refint/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/refint/Library.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/Library.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/Library.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/ref/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/ref/Library.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/refint/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/refint/Library.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/bin/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/bin/Debug/net8.0/Library.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/bin/Debug/net8.0/Library.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/bin/Debug/net8.0/Library.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/ref/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/ref/Library.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/refint/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/refint/Library.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/ref/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/ref/Library.MVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/refint/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/refint/Library.MVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/ref/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/ref/Library.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/refint/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/refint/Library.Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Library.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryTESTS/LibraryTESTS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryTESTS/LibraryTESTS.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryTESTS/UnitTest1.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +261,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/f9342fb513b7b524925c79d9822cd3ecaf072c50231aa3b469875f4c2cdf/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/fb367341658aaedd7de424d4c9189db33c4387e268dcc4011918569442ab12/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library.MVC/Services/Base/ServiceClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/cherm/OneDrive/Рабочий стол/OOA_Projects/Library/Library.MVC/Views/Book/Create.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/cherm/OneDrive/Рабочий стол/OOA_Projects/Library/Library.Persistence/Configurations/Enteties/BookConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="HttpClientSelectedEnvironments">
@@ -809,6 +870,12 @@
       <workItem from="1703087444683" duration="795000" />
       <workItem from="1703160963776" duration="49000" />
       <workItem from="1703406564654" duration="7554000" />
+      <workItem from="1703608867073" duration="606000" />
+      <workItem from="1703686359469" duration="6285000" />
+      <workItem from="1703769587889" duration="8277000" />
+      <workItem from="1703857929430" duration="760000" />
+      <workItem from="1704047337111" duration="7432000" />
+      <workItem from="1704280238702" duration="328000" />
     </task>
     <task id="LOCAL-00001" summary="Almost final version">
       <option name="closed" value="true" />
@@ -882,7 +949,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703407942516</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Tests updated">
+      <option name="closed" value="true" />
+      <created>1703609472837</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703609472837</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -943,7 +1018,8 @@
     <MESSAGE value="Test project added" />
     <MESSAGE value="few files for tests" />
     <MESSAGE value="ReservationSearchOptionsVM added" />
-    <option name="LAST_COMMIT_MESSAGE" value="ReservationSearchOptionsVM added" />
+    <MESSAGE value="Tests updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

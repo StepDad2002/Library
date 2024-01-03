@@ -19,17 +19,15 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Validators\AuthorValidator\" />
-      <Folder Include="Validators\BookValidator\" />
-      <Folder Include="Validators\Common\" />
-      <Folder Include="Validators\CustomerValidator\" />
-      <Folder Include="Validators\FinePaymentValidator\" />
-      <Folder Include="Validators\LoanValidator\" />
-      <Folder Include="Validators\PublisherValidator\" />
-      <Folder Include="Validators\ReservationValidator\" />
-      <Folder Include="Validators\ReviewValidator\" />
-      <Folder Include="Validators\ShelfValidator\" />
-      <Folder Include="Validators\StaffValidator\" />
+      <Compile Remove="Validators\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Validators\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Validators\**" />
     </ItemGroup>
 
 </Project>

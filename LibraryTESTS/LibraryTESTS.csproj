@@ -10,8 +10,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="EntityFrameworkCoreMock.Moq" Version="2.4.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0"/>
+        <PackageReference Include="Moq" Version="4.20.70" />
+        <PackageReference Include="Moq.EntityFrameworkCore" Version="7.0.0.2" />
+        <PackageReference Include="Shouldly" Version="4.2.1" />
         <PackageReference Include="xunit" Version="2.4.2"/>
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -26,7 +30,7 @@
     <ItemGroup>
       <Folder Include="Authors\" />
       <Folder Include="Books\" />
-      <Folder Include="Customers\" />
+      <Folder Include="Customers\Commands\" />
       <Folder Include="FinePayments\" />
       <Folder Include="Loans\" />
       <Folder Include="Publishers\" />
@@ -38,6 +42,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Library.Application\Library.Application.csproj" />
+      <ProjectReference Include="..\Library.MVC\Library.MVC.csproj" />
       <ProjectReference Include="..\Library.Persistence\Library.Persistence.csproj" />
     </ItemGroup>
 
