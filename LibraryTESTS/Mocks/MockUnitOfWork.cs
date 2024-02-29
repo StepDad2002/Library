@@ -10,6 +10,7 @@ public class MockUnitOfWork
         var mockUow = new Mock<IUnitOfWork>();
 
         mockUow.Setup(r => r.CustomerRepository).Returns(MockCustomerRepository.GetCustomerRepository().Object);
+        mockUow.Setup(r => r.StaffRepository).Returns(MockStaffRepository.GetStaffRepository().Object);
 
         return mockUow;
     }

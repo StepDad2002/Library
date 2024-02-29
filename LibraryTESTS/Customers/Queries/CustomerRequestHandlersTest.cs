@@ -1,11 +1,9 @@
 using AutoMapper;
-using Library.Application.Contracts.Persistence;
 using Library.Application.DTOs.Customer;
 using Library.Application.Exeptions;
 using Library.Application.Features.Customer.Requests.Queries;
 using Library.Application.Profiles;
 using LibraryTESTS.Mocks;
-using Moq;
 using Shouldly;
 
 namespace LibraryTESTS.Customers.Queries;
@@ -13,16 +11,10 @@ namespace LibraryTESTS.Customers.Queries;
 public class CustomerRequestHandlersTest
 {
     private readonly IMapper _mapper;
-    private readonly Mock<ICustomerRepository> _customerMockRepo;
 
     public CustomerRequestHandlersTest()
     {
-        _customerMockRepo = MockCustomerRepository.GetCustomerRepository();
-
-        var mapperCfg = new MapperConfiguration(c =>
-        {
-            c.AddProfile<CustomerProfile>();
-        });
+        var mapperCfg = new MapperConfiguration(c => { c.AddProfile<CustomerProfile>(); });
 
         _mapper = mapperCfg.CreateMapper();
     }
@@ -45,16 +37,16 @@ public class CustomerRequestHandlersTest
         var handler = new GetCustomerRequestHandler(MockUnitOfWork.GetUnitOfWork().Object, _mapper);
 
         var result = await handler.Handle((new GetCustomerRequest() { Id = 2 }), default);
-        
+
         result.ShouldNotBeNull();
         result.ShouldBeOfType<CustomerDto>();
     }
-    
+
     [Fact]
     public async Task GetCustomerById_10_Should_ThrowException_WhenNotFound()
     {
         var handler = new GetCustomerRequestHandler(MockUnitOfWork.GetUnitOfWork().Object, _mapper);
-        
+
         await Should.ThrowAsync<NotFoundException>(async () =>
         {
             await handler.Handle((new GetCustomerRequest() { Id = 10 }), default);
@@ -72,7 +64,7 @@ public class CustomerRequestHandlersTest
         result.ShouldBeOfType<CustomerListDto>();
         result.ShouldNotBeNull();
     }
-    
+
     [Fact]
     public async Task GetCustomerByPhone_Should_BeIncorrect_WhenPhoneFormatIsBad()
     {
@@ -84,7 +76,7 @@ public class CustomerRequestHandlersTest
                 { Phone = "111-111-1-1" }, default);
         });
     }
-    
+
     [Fact]
     public async Task GetCustomerByEmail_Should_BeCorrect_WhenEmailFormatIsGood()
     {
@@ -96,7 +88,7 @@ public class CustomerRequestHandlersTest
         result.ShouldBeOfType<CustomerListDto>();
         result.ShouldNotBeNull();
     }
-    
+
     [Fact]
     public async Task GetCustomerByEmail_Should_BeIncorrect_WhenEmailFormatIsBad()
     {

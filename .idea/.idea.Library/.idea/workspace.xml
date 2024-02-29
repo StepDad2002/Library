@@ -21,9 +21,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f44619d-cb9f-4511-a118-1997c475dc8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LibraryTESTS/Customers/Queries/CustomerRequestHandlersTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryTESTS/Mocks/MockCustomerRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryTESTS/Mocks/MockUnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LibraryTESTS/Customers/Commands/CustomerCommandHandlersTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/dataSources/6f573cd2-0116-4fb6-88d8-db081550f1ab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/dataSources/6f573cd2-0116-4fb6-88d8-db081550f1ab.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.API.exe" afterDir="false" />
@@ -34,13 +34,22 @@
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/bin/Debug/net8.0/Library.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/Library.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/ref/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/ref/Library.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/refint/Library.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Debug/net8.0/refint/Library.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Application/Library.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/Library.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Library.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Library.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/Library.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/Library.API.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library.API/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/bin/Debug/net8.0/Library.Domain.dll" afterDir="false" />
@@ -48,18 +57,33 @@
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/Library.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/ref/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/ref/Library.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/refint/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Debug/net8.0/refint/Library.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Library.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Library.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/Library.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/Library.Application.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Application/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Domain/bin/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/bin/Debug/net8.0/Library.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Domain/bin/Debug/net8.0/Library.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/bin/Debug/net8.0/Library.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/Library.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/ref/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/ref/Library.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/refint/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Debug/net8.0/refint/Library.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/Library.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/Library.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Domain/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.Domain.dll" afterDir="false" />
@@ -67,12 +91,322 @@
       <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/Library.MVC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Antiforgery.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Antiforgery.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.BearerToken.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.BearerToken.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.Cookies.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.Cookies.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.OAuth.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.OAuth.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authentication.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authorization.Policy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authorization.Policy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authorization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Authorization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.Authorization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.Authorization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.Endpoints.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.Endpoints.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.Forms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.Forms.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Components.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Connections.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Connections.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.CookiePolicy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.CookiePolicy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Cors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Cors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Cryptography.Internal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Cryptography.Internal.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.DataProtection.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.DataProtection.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.DataProtection.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.DataProtection.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.DataProtection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.DataProtection.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Diagnostics.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Diagnostics.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Diagnostics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Diagnostics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.HostFiltering.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.HostFiltering.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Hosting.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Hosting.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Hosting.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Hosting.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Html.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Html.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Connections.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Connections.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Connections.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Connections.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Features.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Features.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Results.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.Results.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Http.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.HttpLogging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.HttpLogging.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.HttpOverrides.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.HttpOverrides.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.HttpsPolicy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.HttpsPolicy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Identity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Identity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Localization.Routing.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Localization.Routing.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Localization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Localization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Metadata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Metadata.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.ApiExplorer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.ApiExplorer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Cors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Cors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.DataAnnotations.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.DataAnnotations.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Formatters.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Formatters.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Localization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Localization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Razor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.Razor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.RazorPages.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.RazorPages.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.TagHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.TagHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.ViewFeatures.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.ViewFeatures.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Mvc.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.OutputCaching.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.OutputCaching.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.RateLimiting.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.RateLimiting.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Razor.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Razor.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Razor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Razor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.RequestDecompression.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.RequestDecompression.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.ResponseCaching.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.ResponseCaching.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.ResponseCompression.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.ResponseCompression.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Rewrite.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Rewrite.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Routing.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Routing.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Routing.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Routing.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.HttpSys.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.HttpSys.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.IIS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.IIS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.IISIntegration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.IISIntegration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.Kestrel.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.Kestrel.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.Kestrel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Server.Kestrel.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Session.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.Session.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.SignalR.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.SignalR.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.SignalR.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.SignalR.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.SignalR.Protocols.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.SignalR.Protocols.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.SignalR.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.SignalR.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.StaticFiles.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.StaticFiles.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.WebSockets.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.WebSockets.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.WebUtilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.WebUtilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.AspNetCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.Binder.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.CommandLine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.CommandLine.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.EnvironmentVariables.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.EnvironmentVariables.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.FileExtensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.FileExtensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.Ini.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.Ini.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.KeyPerFile.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.KeyPerFile.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.UserSecrets.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.UserSecrets.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.Xml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.Xml.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Configuration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Diagnostics.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Diagnostics.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Diagnostics.HealthChecks.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Diagnostics.HealthChecks.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Diagnostics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Diagnostics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Features.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Features.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.FileProviders.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.FileProviders.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.FileProviders.Composite.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.FileProviders.Composite.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.FileProviders.Embedded.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.FileProviders.Embedded.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.FileProviders.Physical.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.FileProviders.Physical.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.FileSystemGlobbing.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.FileSystemGlobbing.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Hosting.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Hosting.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Hosting.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Hosting.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Http.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Http.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Identity.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Identity.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Identity.Stores.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Identity.Stores.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Localization.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Localization.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Localization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Localization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.Configuration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.Console.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.Console.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.Debug.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.Debug.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.EventLog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.EventLog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.EventSource.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.EventSource.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.TraceSource.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.TraceSource.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Logging.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.ObjectPool.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.ObjectPool.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Options.ConfigurationExtensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Options.ConfigurationExtensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Options.DataAnnotations.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Options.DataAnnotations.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Options.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Options.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.WebEncoders.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Extensions.WebEncoders.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.JSInterop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.JSInterop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Net.Http.Headers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Net.Http.Headers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.VisualBasic.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.VisualBasic.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.VisualBasic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.VisualBasic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Win32.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Win32.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Win32.Registry.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/Microsoft.Win32.Registry.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.AppContext.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.AppContext.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Buffers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Buffers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Collections.Concurrent.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Collections.Concurrent.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Collections.Immutable.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Collections.Immutable.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Collections.NonGeneric.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Collections.NonGeneric.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Collections.Specialized.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Collections.Specialized.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Collections.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Collections.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.Annotations.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.Annotations.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.DataAnnotations.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.DataAnnotations.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.EventBasedAsync.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.EventBasedAsync.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.TypeConverter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.TypeConverter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ComponentModel.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Configuration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Console.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Console.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Data.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Data.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Data.DataSetExtensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Data.DataSetExtensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.Contracts.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.Contracts.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.Debug.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.Debug.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.EventLog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.EventLog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.FileVersionInfo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.FileVersionInfo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.Process.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.Process.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.StackTrace.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.StackTrace.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.TextWriterTraceListener.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.TextWriterTraceListener.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.Tools.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.Tools.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.TraceSource.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.TraceSource.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.Tracing.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Diagnostics.Tracing.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Drawing.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Drawing.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Drawing.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Drawing.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Dynamic.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Dynamic.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Formats.Asn1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Formats.Asn1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Formats.Tar.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Formats.Tar.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Globalization.Calendars.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Globalization.Calendars.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Globalization.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Globalization.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Globalization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Globalization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Compression.Brotli.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Compression.Brotli.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Compression.FileSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Compression.FileSystem.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Compression.ZipFile.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Compression.ZipFile.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Compression.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Compression.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.FileSystem.AccessControl.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.FileSystem.AccessControl.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.FileSystem.DriveInfo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.FileSystem.DriveInfo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.FileSystem.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.FileSystem.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.FileSystem.Watcher.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.FileSystem.Watcher.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.FileSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.FileSystem.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.IsolatedStorage.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.IsolatedStorage.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.MemoryMappedFiles.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.MemoryMappedFiles.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Pipelines.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Pipelines.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Pipes.AccessControl.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Pipes.AccessControl.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Pipes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.Pipes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.UnmanagedMemoryStream.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.UnmanagedMemoryStream.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.IO.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Linq.Expressions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Linq.Expressions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Linq.Parallel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Linq.Parallel.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Linq.Queryable.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Linq.Queryable.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Linq.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Linq.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Memory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Memory.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Http.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Http.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Http.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Http.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.HttpListener.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.HttpListener.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Mail.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Mail.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.NameResolution.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.NameResolution.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.NetworkInformation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.NetworkInformation.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Ping.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Ping.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Quic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Quic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Requests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Requests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Security.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.ServicePoint.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.ServicePoint.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Sockets.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.Sockets.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.WebClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.WebClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.WebHeaderCollection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.WebHeaderCollection.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.WebProxy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.WebProxy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.WebSockets.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.WebSockets.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.WebSockets.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.WebSockets.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Net.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Numerics.Vectors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Numerics.Vectors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Numerics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Numerics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ObjectModel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ObjectModel.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.DispatchProxy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.DispatchProxy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Emit.ILGeneration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Emit.ILGeneration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Emit.Lightweight.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Emit.Lightweight.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Emit.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Emit.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Metadata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Metadata.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.TypeExtensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.TypeExtensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Reflection.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Resources.Reader.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Resources.Reader.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Resources.ResourceManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Resources.ResourceManager.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Resources.Writer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Resources.Writer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.CompilerServices.VisualC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.CompilerServices.VisualC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Handles.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Handles.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.InteropServices.JavaScript.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.InteropServices.JavaScript.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.InteropServices.RuntimeInformation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.InteropServices.RuntimeInformation.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.InteropServices.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.InteropServices.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Intrinsics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Intrinsics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Loader.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Loader.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Numerics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Numerics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Serialization.Formatters.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Serialization.Formatters.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Serialization.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Serialization.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Serialization.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Serialization.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Serialization.Xml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Serialization.Xml.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Serialization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.Serialization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.AccessControl.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.AccessControl.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Claims.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Claims.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Algorithms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Algorithms.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Cng.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Cng.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Csp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Csp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Encoding.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Encoding.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.OpenSsl.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.OpenSsl.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.X509Certificates.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.X509Certificates.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Xml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.Xml.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Cryptography.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Principal.Windows.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Principal.Windows.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Principal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.Principal.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.SecureString.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.SecureString.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Security.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ServiceModel.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ServiceModel.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ServiceProcess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ServiceProcess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.Encoding.CodePages.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.Encoding.CodePages.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.Encoding.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.Encoding.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.Encoding.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.Encoding.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.Encodings.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.RegularExpressions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Text.RegularExpressions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Channels.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Channels.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Overlapped.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Overlapped.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.RateLimiting.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.RateLimiting.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Tasks.Dataflow.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Tasks.Dataflow.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Tasks.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Tasks.Parallel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Tasks.Parallel.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Tasks.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Tasks.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Thread.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Thread.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.ThreadPool.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.ThreadPool.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Timer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.Timer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Threading.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Transactions.Local.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Transactions.Local.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Transactions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Transactions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ValueTuple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.ValueTuple.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Web.HttpUtility.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Web.HttpUtility.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Windows.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Windows.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.Linq.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.Linq.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.ReaderWriter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.ReaderWriter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.Serialization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.Serialization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.XDocument.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.XDocument.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.XPath.XDocument.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.XPath.XDocument.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.XPath.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.XPath.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.XmlDocument.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.XmlDocument.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.XmlSerializer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.XmlSerializer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.Xml.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/System.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/WindowsBase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/WindowsBase.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/mscorlib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/mscorlib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/netstandard.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/bin/Debug/net8.0/refs/netstandard.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/Library.MVC.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/ref/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/ref/Library.MVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/refint/Library.MVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Debug/net8.0/refint/Library.MVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/Library.MVC.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/Library.MVC.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.MVC/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library.MVC/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/bin/Debug/net8.0/Library.Domain.dll" afterDir="false" />
@@ -82,12 +416,22 @@
       <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/Library.Persistence.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/ref/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/ref/Library.Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/refint/Library.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Debug/net8.0/refint/Library.Persistence.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Library.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/Library.Persistence.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/Library.Persistence.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Persistence/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Persistence/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryTESTS/Customers/Queries/CustomerRequestHandlersTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryTESTS/Customers/Queries/CustomerRequestHandlersTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryTESTS/LibraryTESTS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryTESTS/LibraryTESTS.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryTESTS/Mocks/MockCustomerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryTESTS/Mocks/MockCustomerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryTESTS/Mocks/MockUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryTESTS/Mocks/MockUnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryTESTS/obj/Debug/net8.0/LibraryTESTS.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryTESTS/obj/Debug/net8.0/LibraryTESTS.AssemblyInfo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +547,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/66efbec125c33fdfb3a1bec1ed20a19604e9735174ac7196e96ed9476726/Mediator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/6cc6dede52aab6345bbde5d36881fd55b017f53c84c78824d182f9a62c8291f/ISender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/725d7f8b383c14796c79a73cd5cb8e27f3d6e45ba7749501848dcea2aa82e7a/Heartbeat.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/728b2af7367f29913fa27b17da547131b49c824e9b9b611ae5df747609526/ShouldlyCoreExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/7415982338a3ccbd2a7a4eb483af627bda727e356b86bb32c5d4f6998f9c/IRequestHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/74e4c72cd3922ed61496931f33baf4a9b5950edddb6b78bc296241285f25c3/TaskAwaiter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/771f4ca9abd4f63a7c95c3927c8686695c2f281fbd240b2516b9546591224c/ConfigurationValidator.cs" root0="SKIP_HIGHLIGHTING" />
@@ -233,6 +578,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/b77fb925c8f1fd6e6aa64f6edcbe769face168d99abe085ee0cb2731115ca/PhoneAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/b86cdfe19de105ff2eab7d5d4c613fd91b9adfe4f95bd82e2d6db593e6d3ca3/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/b915d63dd6d278bf5114635d1fa248555cd6d0ca59b452341bc6effef2b999c8/RangeAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/ba2a6183ffbe1e67e6436a2648e120c5486d6456d8d4bc51d1d133fdb1cbcc1c/It.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/bb1c9215e0897268602d42e692303ee1f557d3fb9335c7a30faacfeb416871d/UnnamedOptionsManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/bb29b145314d1293451ec05be50944297179ed665e446ae56e4ebbf01013f/IDesignTimeDbContextFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -261,7 +607,6 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/f9342fb513b7b524925c79d9822cd3ecaf072c50231aa3b469875f4c2cdf/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/fb367341658aaedd7de424d4c9189db33c4387e268dcc4011918569442ab12/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library.MVC/Services/Base/ServiceClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/cherm/OneDrive/Рабочий стол/OOA_Projects/Library/Library.Persistence/Configurations/Enteties/BookConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="HttpClientSelectedEnvironments">
@@ -275,7 +620,7 @@
     <option name="ignoreSourceCode" value="false" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="SWEA" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -290,16 +635,18 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Library.API: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Library.MVC: http.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.98737085&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.78760046&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;database.data.extractors.current.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;tests&quot;,
     &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;f94e8a23-6b9b-443b-a983-e7a5dcd1fe59&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;database/&amp;quot;Library_Development&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;f94e8a23-6b9b-443b-a983-e7a5dcd1fe59&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;database/&amp;quot;Library_Development&amp;quot;/schema/&amp;quot;Book&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.10.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.8&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
@@ -875,7 +1222,11 @@
       <workItem from="1703769587889" duration="8277000" />
       <workItem from="1703857929430" duration="760000" />
       <workItem from="1704047337111" duration="7432000" />
-      <workItem from="1704280238702" duration="328000" />
+      <workItem from="1704280238702" duration="1899000" />
+      <workItem from="1704374460917" duration="4653000" />
+      <workItem from="1707041189577" duration="362000" />
+      <workItem from="1708621877414" duration="48000" />
+      <workItem from="1708626152499" duration="218000" />
     </task>
     <task id="LOCAL-00001" summary="Almost final version">
       <option name="closed" value="true" />
@@ -957,7 +1308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703609472837</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Tests for customer request">
+      <option name="closed" value="true" />
+      <created>1704282152066</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704282152066</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1019,7 +1378,8 @@
     <MESSAGE value="few files for tests" />
     <MESSAGE value="ReservationSearchOptionsVM added" />
     <MESSAGE value="Tests updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests updated" />
+    <MESSAGE value="Tests for customer request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests for customer request" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1259,6 +1619,18 @@
           </properties>
           <option name="timeStamp" value="310" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties exception="System.NullReferenceException" isInternal="false" displayValue="NullReferenceException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="312" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties exception="Shouldly.ShouldAssertException" isInternal="false" displayValue="ShouldAssertException" namespaceName="Shouldly">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="313" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>

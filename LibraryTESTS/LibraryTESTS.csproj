@@ -30,7 +30,6 @@
     <ItemGroup>
       <Folder Include="Authors\" />
       <Folder Include="Books\" />
-      <Folder Include="Customers\Commands\" />
       <Folder Include="FinePayments\" />
       <Folder Include="Loans\" />
       <Folder Include="Publishers\" />
